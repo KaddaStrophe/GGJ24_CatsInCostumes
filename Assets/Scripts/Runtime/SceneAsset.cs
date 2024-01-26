@@ -14,5 +14,7 @@ namespace CatsInCostumes {
 
         [SerializeField]
         internal string speech;
+
+        internal bool isNarrator => string.IsNullOrEmpty(speaker) || speaker == "-";
     }
 }

@@ -10,6 +10,7 @@ namespace CatsInCostumes {
         InputActionReference advanceAction;
 
         InkStory story;
+        ScreenAsset currentScreen;
 
         void OnEnable() {
             if (advanceAction.action is { } action) {
@@ -38,32 +39,33 @@ namespace CatsInCostumes {
         void SetInk() {
             if (inkFile) {
                 story = new(inkFile.text);
+                currentScreen = ScriptableObject.CreateInstance<ScreenAsset>();
                 NextPage();
             }
         }
 
         public void NextPage() {
             if (story.canContinue) {
-                var screen = ScriptableObject.CreateInstance<ScreenAsset>();
-                screen.speech = story.Continue();
+                currentScreen = Instantiate(currentScreen);
+                currentScreen.speech = story.Continue().Trim();
                 foreach (string tag in story.currentTags) {
                     string key = tag.Split(' ')[0];
                     string value = tag[(key.Length + 1)..];
 
                     switch (key) {
                         case "background":
-                            screen.background = value;
+                            currentScreen.background = value;
                             break;
                         case "speaker":
-                            screen.speaker = value;
+                            currentScreen.speaker = value;
                             break;
                         case "mood":
-                            screen.mood = value;
+                            currentScreen.mood = value;
                             break;
                     }
                 }
 
-                gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), screen, SendMessageOptions.DontRequireReceiver);
+                gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
             } else {
                 Destroy(gameObject);
             }

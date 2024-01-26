@@ -18,8 +18,16 @@ namespace CatsInCostumes {
         void UpdateScreen() {
             if (screen) {
                 gameObject.SetActive(!string.IsNullOrEmpty(screen.speech));
+
                 speaker.text = screen.speaker;
-                speech.text = screen.speech;
+                speaker.gameObject.SetActive(!screen.isNarrator);
+
+                speech.text = screen.isNarrator
+                    ? screen.speech
+                    : $"\"{screen.speech}\"";
+                speech.fontStyle = screen.isNarrator
+                    ? FontStyles.Normal
+                    : FontStyles.Italic;
             }
         }
 
