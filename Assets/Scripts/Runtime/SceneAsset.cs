@@ -11,5 +11,8 @@ namespace CatsInCostumes {
 
         [SerializeField]
         internal string mood;
+
+        [SerializeField]
+        internal string speech;
     }
 }

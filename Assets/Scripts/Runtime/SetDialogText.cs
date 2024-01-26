@@ -1,15 +1,15 @@
 using Slothsoft.UnityExtensions;
+using TMPro;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.UI;
 
 namespace CatsInCostumes {
-    sealed class SetBackgroundImage : MonoBehaviour, IScreenMessages {
+    sealed class SetDialogText : MonoBehaviour, IScreenMessages {
         [SerializeField, Expandable]
         ScreenAsset screen;
         [SerializeField]
-        Image image;
+        TextMeshProUGUI speaker;
+        [SerializeField]
+        TextMeshProUGUI speech;
 
         void Start() {
             UpdateScreen();
@@ -17,12 +17,10 @@ namespace CatsInCostumes {
 
         void UpdateScreen() {
             if (screen) {
-                Addressables.LoadAssetAsync<Sprite>(screen.background).Completed += SetImage;
+                gameObject.SetActive(!string.IsNullOrEmpty(screen.speech));
+                speaker.text = screen.speaker;
+                speech.text = screen.speech;
             }
-        }
-
-        void SetImage(AsyncOperationHandle<Sprite> handle) {
-            image.sprite = handle.Result;
         }
 
         public void OnSetScreen(ScreenAsset screen) {

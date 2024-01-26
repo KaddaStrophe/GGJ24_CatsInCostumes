@@ -6,7 +6,8 @@
         "Slothsoft.UnityExtensions",
         "Ink-Libraries",
         "Unity.Addressables",
-        "Unity.ResourceManager"
+        "Unity.ResourceManager",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

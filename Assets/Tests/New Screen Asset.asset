@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: New Screen Asset
   m_EditorClassIdentifier: 
   background: Unknown
-  speaker: 
+  speaker: ???
   mood: 
+  speech: Hello World!
