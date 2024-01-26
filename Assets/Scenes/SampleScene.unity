@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 1082607608}
   - component: {fileID: 1082607607}
   - component: {fileID: 1082607611}
+  - component: {fileID: 1082607612}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -633,7 +634,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkFile: {fileID: 4900000, guid: b8653b14f19b697429cfe831fb020c43, type: 3}
+--- !u!114 &1082607612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082607606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d5ac913bef4ba42938e54b9c9879af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   advanceAction: {fileID: -8630104623035308676, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  reactions:
+  - {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: 4117308181713762996, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: 6097851517180452275, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -5700591584384265526, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -1610503776761932831, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -430087484081084391, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -8756183111799471533, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -3633326535909101974, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+  - {fileID: -1109767695786490749, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
 --- !u!1 &1104898464
 GameObject:
   m_ObjectHideFlags: 0

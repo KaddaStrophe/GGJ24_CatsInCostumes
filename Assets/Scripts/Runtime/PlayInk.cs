@@ -1,36 +1,14 @@
+using MyBox;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using InkStory = Ink.Runtime.Story;
 
 namespace CatsInCostumes {
     sealed class PlayInk : MonoBehaviour, IInkMessages {
         [SerializeField]
         TextAsset inkFile;
-        [SerializeField]
-        InputActionReference advanceAction;
 
         InkStory story;
         ScreenAsset currentScreen;
-
-        void OnEnable() {
-            if (advanceAction.action is { } action) {
-                action.performed += HandleAdvance;
-                action.Enable();
-            }
-        }
-
-        void OnDisable() {
-            if (advanceAction.action is { } action) {
-                action.performed -= HandleAdvance;
-                action.Disable();
-            }
-        }
-
-        void HandleAdvance(InputAction.CallbackContext context) {
-            if (story is not null) {
-                NextPage();
-            }
-        }
 
         void Start() {
             SetInk();
@@ -45,6 +23,10 @@ namespace CatsInCostumes {
         }
 
         public void NextPage() {
+            if (story is { currentChoices: var choices } && choices.Count > 0) {
+                return;
+            }
+
             if (story.canContinue) {
                 currentScreen = Instantiate(currentScreen);
                 currentScreen.speech = story.Continue().Trim();
@@ -74,6 +56,18 @@ namespace CatsInCostumes {
         public void OnSetInk(TextAsset inkFile) {
             this.inkFile = inkFile;
             SetInk();
+        }
+
+        public void OnAdvanceInk() => NextPage();
+
+        public void OnReact(string reaction) {
+            if (story is { currentChoices: var choices }) {
+                int id = choices.FirstIndex(choice => choice.text == reaction);
+                if (id != -1) {
+                    story.ChooseChoiceIndex(id);
+                    NextPage();
+                }
+            }
         }
     }
 }
