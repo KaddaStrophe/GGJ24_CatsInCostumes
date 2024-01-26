@@ -4,7 +4,9 @@
     "references": [
         "MyBox",
         "Slothsoft.UnityExtensions",
-        "Ink-Libraries"
+        "Ink-Libraries",
+        "Unity.Addressables",
+        "Unity.ResourceManager"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
