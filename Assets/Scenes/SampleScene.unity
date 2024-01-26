@@ -301,17 +301,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 833504661111951184, guid: 8a40022bf258af54cb686107e5f7ca7b, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2962415220984705151, guid: 8a40022bf258af54cb686107e5f7ca7b, type: 3}
       propertyPath: m_Name
       value: P_Scene
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670826821926622599, guid: 8a40022bf258af54cb686107e5f7ca7b, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7252725718941794162, guid: 8a40022bf258af54cb686107e5f7ca7b, type: 3}
       propertyPath: m_Pivot.x
