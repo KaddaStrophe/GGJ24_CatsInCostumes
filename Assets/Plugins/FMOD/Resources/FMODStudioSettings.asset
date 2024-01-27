@@ -350,8 +350,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMOD_Project/GGJ24_CatsInCostumes/GGJ24_CatsInCostumes.fspro
-  sourceBankPath: FMOD_Project/GGJ24_CatsInCostumes/Build
+  sourceProjectPath: FMOD Project/GGJ24_CatsInCostumes/GGJ24_CatsInCostumes.fspro
+  sourceBankPath: FMOD Project/GGJ24_CatsInCostumes/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
