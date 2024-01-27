@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -31,10 +30,6 @@ namespace CatsInCostumes {
         internal static bool TryGetStory(string id, out TextAsset asset) => TryGetFromDictionary(id, out asset, stories);
         internal static bool TryGetIcon(string id, out Sprite asset) => TryGetFromDictionary(id, out asset, icons);
 
-        [Header("FMOD")]
-        [SerializeField, ParamRef]
-        string gameStateParameter;
-
         static GameState m_gameState;
         internal static GameState gameState {
             get => m_gameState;
@@ -46,8 +41,6 @@ namespace CatsInCostumes {
             }
         }
 
-        PARAMETER_DESCRIPTION gameStateDescription;
-
         IEnumerator Start() {
             yield return LoadLabelToDictionary(backgroundLabel, backgrounds);
             yield return LoadLabelToDictionary(characterLabel, characters);
@@ -56,14 +49,8 @@ namespace CatsInCostumes {
 
             yield return new WaitUntil(() => RuntimeManager.HaveAllBanksLoaded);
 
-            if (RuntimeManager.StudioSystem.getParameterDescriptionByName(gameStateParameter, out gameStateDescription) == FMOD.RESULT.OK) {
-                UpdateState();
-            }
-
             isReady = true;
         }
-
-        void UpdateState() => RuntimeManager.StudioSystem.setParameterByIDWithLabel(gameStateDescription.id, gameState.ToString());
 
         IEnumerator LoadLabelToDictionary<T>(string label, Dictionary<string, T> dictionary) {
             var locations = Addressables.LoadResourceLocationsAsync(label, typeof(T));

@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 namespace CatsInCostumes {
     sealed class InputHandler : MonoBehaviour {
+
+        internal static InputHandler instance { get; private set; }
+
         [SerializeField]
         InputActionReference escapeAction;
         [SerializeField]
@@ -14,13 +17,15 @@ namespace CatsInCostumes {
         [SerializeField]
         internal InputActionReference[] reactions = Array.Empty<InputActionReference>();
 
+        internal static IEnumerable<InputAction> reactionActions => instance
+            ? instance.reactions.Select(r => r.action)
+            : Enumerable.Empty<InputAction>();
+
         [SerializeField]
         internal InputActionReference[] scenes = Array.Empty<InputActionReference>();
 
-        internal static InputHandler instance { get; private set; }
-
-        internal static IEnumerable<InputAction> reactionActions => instance
-            ? instance.reactions.Select(r => r.action)
+        internal static IEnumerable<InputAction> sceneActions => instance
+            ? instance.scenes.Select(r => r.action).Where(a => GameManager.TryGetStory(a.name, out _))
             : Enumerable.Empty<InputAction>();
 
         void Awake() {
