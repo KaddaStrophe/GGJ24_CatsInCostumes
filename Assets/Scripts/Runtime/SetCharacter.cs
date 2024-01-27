@@ -17,7 +17,7 @@ namespace CatsInCostumes {
                 speaker.text = screen.speaker;
                 speaker.gameObject.SetActive(true);
 
-                if (screen.speakerAsset.TryGetSprite(screen.mood, out var sprite)) {
+                if (screen.TryGetSpeakerPortrait(out var sprite)) {
                     portrait.sprite = sprite;
                     portrait.SetNativeSize();
                     portrait.gameObject.SetActive(true);

@@ -3,32 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using Slothsoft.UnityExtensions;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace CatsInCostumes {
     [CreateAssetMenu]
     sealed class CharacterAsset : ScriptableObject {
-        internal static CharacterAsset empty => CreateInstance<CharacterAsset>();
+        static CharacterAsset m_empty;
+        internal static CharacterAsset empty {
+            get {
+                if (!m_empty) {
+                    m_empty = CreateInstance<CharacterAsset>();
+                }
+
+                return m_empty;
+            }
+        }
+
         internal static CharacterAsset GetAssetById(string id) {
             if (IsNarrator(id)) {
-                return empty;
+                return null;
             }
 
-            var locationHandle = Addressables.LoadResourceLocationsAsync(id, typeof(CharacterAsset));
-            locationHandle.WaitForCompletion();
-            var locations = locationHandle.Result;
-            if (locations.Count == 0) {
-                return empty;
-            }
-
-            var assetHandle = Addressables.LoadAssetAsync<CharacterAsset>(locations[0]);
-            assetHandle.WaitForCompletion();
-            if (!assetHandle.Result) {
-                return empty;
-            }
-
-            return assetHandle.Result;
+            return GameManager.TryGetCharacter(id, out var character)
+                ? character
+                : null;
         }
+
         internal static bool IsNarrator(string id) {
             return string.IsNullOrEmpty(id) || id == "-";
         }

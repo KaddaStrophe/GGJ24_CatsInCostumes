@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using MyBox;
 using UnityEngine;
 using InkStory = Ink.Runtime.Story;
@@ -11,7 +12,9 @@ namespace CatsInCostumes {
         InkStory story;
         ScreenAsset currentScreen;
 
-        void Start() {
+        IEnumerator Start() {
+            yield return GameManager.waitUntilReady;
+
             SetInk();
         }
 

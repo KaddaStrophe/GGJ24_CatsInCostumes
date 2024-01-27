@@ -10,7 +10,7 @@ namespace CatsInCostumes {
         [SerializeField, FormerlySerializedAs(nameof(speaker))]
         string speakerId;
         [SerializeField]
-        internal CharacterAsset speakerAsset;
+        CharacterAsset speakerAsset;
 
         internal string speaker {
             get => speakerId;
@@ -29,5 +29,14 @@ namespace CatsInCostumes {
         internal string speech;
 
         internal bool isNarrator => CharacterAsset.IsNarrator(speaker);
+
+        internal bool TryGetSpeakerPortrait(out Sprite sprite) {
+            if (speakerAsset) {
+                return speakerAsset.TryGetSprite(mood, out sprite);
+            }
+
+            sprite = default;
+            return false;
+        }
     }
 }

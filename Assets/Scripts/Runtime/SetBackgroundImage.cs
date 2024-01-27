@@ -1,7 +1,6 @@
+using System.Collections;
 using Slothsoft.UnityExtensions;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 namespace CatsInCostumes {
@@ -9,20 +8,29 @@ namespace CatsInCostumes {
         [SerializeField, Expandable]
         ScreenAsset screen;
         [SerializeField]
+        string label;
+        [SerializeField]
         Image image;
 
-        void Start() {
+        IEnumerator Start() {
+            yield return GameManager.waitUntilReady;
+
             UpdateScreen();
         }
 
         void UpdateScreen() {
             if (screen) {
-                Addressables.LoadAssetAsync<Sprite>(screen.background).Completed += SetImage;
+                SetImage(screen.background);
             }
         }
 
-        void SetImage(AsyncOperationHandle<Sprite> handle) {
-            image.sprite = handle.Result;
+        void SetImage(string background) {
+            if (GameManager.TryGetBackground(background, out var sprite)) {
+                image.sprite = sprite;
+                image.enabled = true;
+            } else {
+                image.enabled = false;
+            }
         }
 
         public void OnSetScreen(ScreenAsset screen) {

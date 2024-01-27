@@ -20,12 +20,20 @@ MonoBehaviour:
   - m_GUID: e8cd088ab31b27f4686737fa1fc9f726
     m_Address: Unknown
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - backgrounds
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a02043194b959a439b118b2cba2a0cf
     m_Address: Gimli
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8653b14f19b697429cfe831fb020c43
+    m_Address: Assets/Narrative/CouncilOfElrond/INK_CouncilOfElrond.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - stories
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
