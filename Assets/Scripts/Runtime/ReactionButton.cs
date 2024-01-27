@@ -9,6 +9,8 @@ namespace CatsInCostumes {
         [SerializeField]
         TextMeshProUGUI binding;
         [SerializeField]
+        Image image;
+        [SerializeField]
         Button button;
 
         InputAction action;
@@ -33,6 +35,13 @@ namespace CatsInCostumes {
                 .FirstOrDefault()
                 .path
                 .Split('/')[^1];
+
+            if (GameManager.TryGetIcon(action.name, out var sprite)) {
+                image.sprite = sprite;
+                image.enabled = true;
+            } else {
+                image.enabled = false;
+            }
         }
 
         public void OnSetAction(InputAction action) {
