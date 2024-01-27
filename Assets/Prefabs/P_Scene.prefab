@@ -266,6 +266,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speakerParameter: Actors
+  narratorName: NARRATOR
+  meowingReference:
+    Guid:
+      Data1: 1031385293
+      Data2: 1182960149
+      Data3: 1458739613
+      Data4: 398355906
+    Path: event:/SFX/Audience/typewritermeow
 --- !u!1 &2981817950573110858
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +505,7 @@ MonoBehaviour:
   screen: {fileID: 11400000, guid: 24f65e075ce1aa24299a34b47bbb3fd2, type: 2}
   speechBox: {fileID: 3281415547063755369}
   speech: {fileID: 833504661111951184}
+  letterDelay: 0.02
 --- !u!114 &8288899527056493003
 MonoBehaviour:
   m_ObjectHideFlags: 0

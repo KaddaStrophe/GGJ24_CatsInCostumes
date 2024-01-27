@@ -41,7 +41,7 @@ namespace CatsInCostumes {
         float letterDelay = 0.01f;
 
         IEnumerator UpdateText_Co() {
-            screen.isPrinting = true;
+            screen.isMeowing = true;
 
             string text = speech.text;
 
@@ -52,14 +52,14 @@ namespace CatsInCostumes {
                     yield return Wait.forSeconds[letterDelay];
                 }
 
-                if (!screen.isPrinting) {
+                if (!screen.isMeowing) {
                     break;
                 }
             }
 
             speech.maxVisibleCharacters = text.Length;
 
-            screen.isPrinting = false;
+            screen.isMeowing = false;
 
             textRoutine = null;
         }

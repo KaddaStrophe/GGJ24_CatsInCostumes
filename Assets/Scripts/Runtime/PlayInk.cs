@@ -91,8 +91,8 @@ namespace CatsInCostumes {
         }
 
         public void OnAdvanceInk() {
-            if (currentScreen.isPrinting) {
-                currentScreen.isPrinting = false;
+            if (currentScreen.isMeowing) {
+                currentScreen.isMeowing = false;
             } else {
                 NextPage();
             }
