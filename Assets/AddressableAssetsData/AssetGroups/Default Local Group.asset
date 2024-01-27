@@ -35,6 +35,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - stories
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aaff3ddc92638b74f9c109c47a5e2f8a
+    m_Address: Rivendell
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
