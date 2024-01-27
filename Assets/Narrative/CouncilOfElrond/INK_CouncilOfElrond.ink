@@ -49,13 +49,13 @@ And while the other council members shook their heads and judged Gimli, the youn
 # speaker -
 The absence of any yet so quiet sound brought the council members nerves on edge, and they all needed a thorough spa session in Elrond’s extensive hall of hot ponds, where he himself had cured himself of Isildur’s stupidity once.
 
--> DONE
+-> section2
 
 == badumtss1 ==
 # speaker -
 As the council broke away in laughter, sinking with endless streams of tears in their eyes to the ground, Gimli stood alone and sad.
 
--> DONE
+-> section2
 
 == dundunndunnn1 ==
 # speaker Elrond
@@ -76,7 +76,7 @@ When Arwen returned home, she found nothing but a collection of letters bidding 
 # speaker -
 Legolas was in awe of the dwarfs display of muscles.
 
--> DONE
+-> section2
 
 == angryboat1 ==
 # speaker Gimli
@@ -103,7 +103,7 @@ And then he pr- arrrgggghhh….
 # speaker Legolas
 He’s cute..
 
--> DONE
+-> section2
 
 == clap1 ==
 -> section2
@@ -127,7 +127,9 @@ He’s cute..
 Don't be ashamed Gimli, son of Glóin, for none here could have mustered the strength to carve a yet so little scar into the Dark Lords precious ring.
 
 # speaker Gandalf
-Aragorn speaks wisely. The Ring cannot be destroyed, at least not by any of us: not by the hot ovens under the Lonely Mountain - I dare say not even the smoldering fires within the mightiest dragon of yore Ancalagon the Black could have molten The Ring.
+Aragorn speaks wisely. The Ring cannot be destroyed, at least not by any of us: not by the hot ovens under the Lonely Mountain
+
+I dare say not even the smoldering fires within the mightiest dragon of yore Ancalagon the Black could have molten The Ring.
 
 # speaker Legolas
 But that is terrible news! We cannot hide it, for none of our holds will withstand Saurons test over time, we cannot defeat Sauron, for he is too powerful already, and now you say we cannot destroy it!
@@ -141,6 +143,83 @@ There is one way to destroy it.
 The Ring must be carried the long way to the dark lands of Mordor, brought over the plains of Gorgoroth and cast into the fires of Mount Doom, Orodruin, where it was crafted.
 
 And one of you must do this deed.
+
++ [airhorn]      	-> airhorn2
++ [sadduck]      	-> sadduck2
++ [cicarda]      	-> cicarda2
++ [badumtss]     	-> badumtss2
++ [dundunndunnn] 	-> dundunndunnn2
++ [catcallwhistle]  -> catcallwhistle2
++ [angryboat]     	-> angryboat2
++ [awwww]     		-> awwww2
++ [clap]     		-> clap2
+
+== airhorn2 ==
+# speaker Elrond
+Wohoo! I know it's exciting right?
+
+-> section3
+
+== sadduck2 ==
+# speaker Legolas
+What grief! What grief! Ai oi!
+
+-> section3
+
+== cicarda2 ==
+# speaker Elrond
+...
+
+# speaker Legolas
+Oh I can't stand this silence!
+
+-> section3
+
+== badumtss2 ==
+-> section3
+
+== dundunndunnn2 ==
+# speaker Legolas
+What grief! What grief! Ai oi!
+
+-> section3
+
+== catcallwhistle2 ==
+-> section3
+
+== angryboat2 ==
+# speaker Legolas
+What grief! What grief! Ai oi!
+
+-> section3
+
+== awwww2 ==
+# speaker Legolas
+What grief! What grief! Ai oi!
+
+-> section3
+
+== clap2 ==
+# speaker Gandalf
+We're in a grave situation indeed.
+
+-> section3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+== section3 ==
 
 # speaker Gimli
 # mood shook
@@ -164,18 +243,18 @@ And one of you must do this deed.
 # mood neutral
 I will do it. I will carry the Ring to Mordor! Though I do not know the way..
 
-+ [airhorn]      	-> airhorn2
-+ [sadduck]      	-> sadduck2
-+ [cicarda]      	-> cicarda2
-+ [badumtss]     	-> badumtss2
-+ [dundunndunnn] 	-> dundunndunnn2
-+ [catcallwhistle]  -> catcallwhistle2
-+ [angryboat]     	-> angryboat2
-+ [awwww]     		-> awwww2
-+ [clap]     		-> clap2
++ [airhorn]      	-> airhorn3
++ [sadduck]      	-> sadduck3
++ [cicarda]      	-> cicarda3
++ [badumtss]     	-> badumtss3
++ [dundunndunnn] 	-> dundunndunnn3
++ [catcallwhistle]  -> catcallwhistle3
++ [angryboat]     	-> angryboat3
++ [awwww]     		-> awwww3
++ [clap]     		-> clap3
 
 
-== airhorn2 ==
+== airhorn3 ==
 # speaker Frodo
 # mood neutral
 Anyway LET! US! GO! I am READY for this journey, Sam let's grab that ring and hike yonder!
@@ -185,17 +264,19 @@ It was then that Gandalf and Elrond realized they had made a grand mistake trust
 
 -> DONE
 
-== sadduck2 ==
+== sadduck3 ==
 # speaker Frodo
 # mood shook
 ...
 
 # speaker -
-Frodo's heart sank as everyone looked at him with grave pity and disbelief. Not even Gandalf trusted him with this task and he clearly overstepped a line, so he sat down again and stayed silent from now on.
+Frodo's heart sank as everyone looked at him with grave pity and disbelief. Not even Gandalf trusted him with this task.
+
+He clearly overstepped a line, so he sat down again and stayed silent from now on.
 
 -> DONE
 
-== cicarda2 ==
+== cicarda3 ==
 # speaker -
 In the glaring silence only the rustling of the autumnal leaves of Imladris trees could be heard, and faint songs of elves in the distance. But suddenly-
 
@@ -226,16 +307,18 @@ When everyone had proclaimed there respective weaponry at hand, the fellowship h
 
 -> DONE
 
-== badumtss2 ==
+== badumtss3 ==
 # speaker -
 It was hard for Elrond to not break into laughter. He really tried not to. But amidst the storm of giggles and open joy at the expense of the poor hobbit, the old Elfs barriers at last fell.
 
 # speaker -
-Gandalf was in tears for he had never witnessed a joke so wonderful and absurd. For many years he would tell the story of Frodo the Funny to enlighten the hearts of man, elf and every member of the free folks under the western sun.
+Gandalf was in tears for he had never witnessed a joke so wonderful and absurd.
+
+For many years he would tell the story of Frodo the Funny to enlighten the hearts of man, elf and every member of the free folks under the western sun.
 
 -> DONE
 
-== dundunndunnn2 ==
+== dundunndunnn3 ==
 # speaker -
 The council sat in silence, pondering the heavy burden the young hobbit had just laid upon himself, and everyone felt a little ashamed they hadn't come forth themselves.
 
@@ -264,13 +347,13 @@ When everyone had proclaimed there respective weaponry at hand, the fellowship h
 
 -> DONE
 
-== catcallwhistle2 ==
+== catcallwhistle3 ==
 # speaker -
 Gimli and Legolas had exchanged meaningful glances, a romantic tension was in the air.
 
 -> DONE
 
-== angryboat2 ==
+== angryboat3 ==
 # speaker Gimli
 # mood shook
 It seems to me as if the Dark Lord has called from far away, responding to our challenge.
@@ -286,7 +369,7 @@ Five hours of doomspeak later, Frodo was devoid of any strength and stared flatl
 
 -> DONE
 
-== awwww2 ==
+== awwww3 ==
 # speaker Gimli
 # mood neutral
 What a sturdy hobbit here among us, and what courage!
@@ -318,7 +401,7 @@ When everyone had proclaimed there respective weaponry at hand, the fellowship h
 
 -> DONE
 
-== clap2 ==
+== clap3 ==
 # speaker Frodo
 # mood shook
 Oh thank you, high council of Elrond! I am moved to tears and will be particular solemn and melancholic on this journey, as I never would've been elsewise!
