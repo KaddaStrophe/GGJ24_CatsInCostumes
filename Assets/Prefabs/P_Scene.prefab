@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6263191429561225259}
   - component: {fileID: 3205149135354698888}
   - component: {fileID: 4362829114067250052}
+  - component: {fileID: 8840295515077036697}
   m_Layer: 5
   m_Name: P_Scene
   m_TagString: Untagged
@@ -252,6 +253,19 @@ MonoBehaviour:
   inkFile: {fileID: 4900000, guid: b8653b14f19b697429cfe831fb020c43, type: 3}
   reactionDelay: 1
   sceneDelay: 2
+--- !u!114 &8840295515077036697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962415220984705151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c28322b0577384c8b96bb3cd5b8e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakerParameter: Actors
 --- !u!1 &2981817950573110858
 GameObject:
   m_ObjectHideFlags: 0
