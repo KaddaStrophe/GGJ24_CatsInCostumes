@@ -1,3 +1,4 @@
+using System.Collections;
 using Slothsoft.UnityExtensions;
 using TMPro;
 using UnityEngine;
@@ -15,13 +16,52 @@ namespace CatsInCostumes {
             UpdateScreen();
         }
 
+        Coroutine textRoutine;
+
         void UpdateScreen() {
             if (screen) {
+                if (textRoutine is not null) {
+                    StopCoroutine(textRoutine);
+                    textRoutine = null;
+                }
+
                 speech.text = screen.isNarrator
                     ? screen.speech
                     : $"\"{screen.speech}\"";
-                speechBox.SetActive(!string.IsNullOrEmpty(screen.speech));
+                if (string.IsNullOrEmpty(screen.speech)) {
+                    speechBox.SetActive(false);
+                } else {
+                    speechBox.SetActive(true);
+                    textRoutine = StartCoroutine(UpdateText_Co());
+                }
             }
+        }
+
+        [SerializeField]
+        float letterDelay = 0.01f;
+
+        IEnumerator UpdateText_Co() {
+            screen.isPrinting = true;
+
+            string text = speech.text;
+
+            for (int i = 0; i < text.Length; i++) {
+                speech.maxVisibleCharacters = i;
+
+                if (char.IsLetter(text[i])) {
+                    yield return Wait.forSeconds[letterDelay];
+                }
+
+                if (!screen.isPrinting) {
+                    break;
+                }
+            }
+
+            speech.maxVisibleCharacters = text.Length;
+
+            screen.isPrinting = false;
+
+            textRoutine = null;
         }
 
         public void OnSetScreen(ScreenAsset screen) {

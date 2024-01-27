@@ -52,6 +52,8 @@ namespace CatsInCostumes {
 
         [SerializeField]
         internal string nextScene;
+        [SerializeField]
+        internal bool isPrinting;
 
         internal bool TryGetNextScene(out TextAsset scene) {
             scene = default;

@@ -90,7 +90,13 @@ namespace CatsInCostumes {
             SetInk();
         }
 
-        public void OnAdvanceInk() => NextPage();
+        public void OnAdvanceInk() {
+            if (currentScreen.isPrinting) {
+                currentScreen.isPrinting = false;
+            } else {
+                NextPage();
+            }
+        }
 
         [Space]
         [SerializeField]
