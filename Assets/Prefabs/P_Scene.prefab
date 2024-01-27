@@ -357,11 +357,11 @@ MonoBehaviour:
     - key: 0
       value: 0
     - key: 1
-      value: 0.8
+      value: 0.5
     - key: 2
       value: 1
     - key: 3
-      value: 0.8
+      value: 0.5
 --- !u!225 &6779802022716154685
 CanvasGroup:
   m_ObjectHideFlags: 0
