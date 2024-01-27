@@ -11,10 +11,13 @@ namespace CatsInCostumes {
         string characterLabel = "characters";
         [SerializeField]
         string storyLabel = "stories";
+        [SerializeField]
+        string iconLabel = "icons";
 
         static Dictionary<string, Sprite> backgrounds = new();
         static Dictionary<string, CharacterAsset> characters = new();
         static Dictionary<string, TextAsset> stories = new();
+        static Dictionary<string, Sprite> icons = new();
 
         internal static readonly WaitUntil waitUntilReady = new(() => isReady);
         static bool isReady = false;
@@ -22,11 +25,13 @@ namespace CatsInCostumes {
         internal static bool TryGetBackground(string id, out Sprite asset) => TryGetFromDictionary(id, out asset, backgrounds);
         internal static bool TryGetCharacter(string id, out CharacterAsset asset) => TryGetFromDictionary(id, out asset, characters);
         internal static bool TryGetStory(string id, out TextAsset asset) => TryGetFromDictionary(id, out asset, stories);
+        internal static bool TryGetIcon(string id, out Sprite asset) => TryGetFromDictionary(id, out asset, icons);
 
         IEnumerator Start() {
             yield return LoadLabelToDictionary(backgroundLabel, backgrounds);
             yield return LoadLabelToDictionary(characterLabel, characters);
             yield return LoadLabelToDictionary(storyLabel, stories);
+            yield return LoadLabelToDictionary(iconLabel, icons);
 
             yield return null;
 
