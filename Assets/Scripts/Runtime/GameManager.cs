@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace CatsInCostumes {
-    sealed class GameManager : MonoBehaviour {
+    sealed class GameManager : MonoBehaviour, IGameMessages {
         [Header("Addressables")]
         [SerializeField]
         string backgroundLabel = "backgrounds";
@@ -76,6 +76,12 @@ namespace CatsInCostumes {
 
             asset = default;
             return false;
+        }
+
+        public void OnLoadScene(string scene) {
+            if (TryGetStory(scene, out var story)) {
+                gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
+            }
         }
     }
 }

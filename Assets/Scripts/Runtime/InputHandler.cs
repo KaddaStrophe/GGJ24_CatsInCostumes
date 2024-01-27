@@ -12,6 +12,9 @@ namespace CatsInCostumes {
         [SerializeField]
         internal InputActionReference[] reactions = Array.Empty<InputActionReference>();
 
+        [SerializeField]
+        internal InputActionReference[] scenes = Array.Empty<InputActionReference>();
+
         internal static InputHandler instance { get; private set; }
 
         internal static IEnumerable<InputAction> reactionActions => instance
@@ -34,6 +37,13 @@ namespace CatsInCostumes {
                     reaction.Enable();
                 }
             }
+
+            for (int i = 0; i < scenes.Length; i++) {
+                if (scenes[i].action is { } scene) {
+                    scene.performed += HandleScene;
+                    scene.Enable();
+                }
+            }
         }
 
         void OnDisable() {
@@ -48,6 +58,13 @@ namespace CatsInCostumes {
                     reaction.Disable();
                 }
             }
+
+            for (int i = 0; i < scenes.Length; i++) {
+                if (scenes[i].action is { } scene) {
+                    scene.performed += HandleScene;
+                    scene.Disable();
+                }
+            }
         }
 
         void HandleAdvance(InputAction.CallbackContext context) {
@@ -57,6 +74,11 @@ namespace CatsInCostumes {
         void HandleReaction(InputAction.CallbackContext context) {
             string reaction = context.action.name;
             gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnReact), reaction);
+        }
+
+        void HandleScene(InputAction.CallbackContext context) {
+            string scene = context.action.name;
+            gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnLoadScene), scene);
         }
     }
 }
