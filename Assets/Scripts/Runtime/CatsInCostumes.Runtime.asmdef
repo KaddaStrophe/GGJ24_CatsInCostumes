@@ -8,7 +8,8 @@
         "Unity.Addressables",
         "Unity.ResourceManager",
         "Unity.TextMeshPro",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "FMODUnity"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4706161194309828780}
   - component: {fileID: 8057844671357735677}
   - component: {fileID: 9215874339966104699}
+  - component: {fileID: 3123172047711324524}
   m_Layer: 0
   m_Name: P_GameManager
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   backgroundLabel: backgrounds
   characterLabel: characters
   storyLabel: stories
+  iconLabel: icons
 --- !u!114 &9215874339966104699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,3 +73,15 @@ MonoBehaviour:
   - {fileID: 4117308181713762996, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   - {fileID: 6097851517180452275, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   - {fileID: -8756183111799471533, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+--- !u!114 &3123172047711324524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793785462613799452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1000b770e8487345a7189510c20a8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
