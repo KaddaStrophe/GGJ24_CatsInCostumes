@@ -7,6 +7,8 @@ namespace CatsInCostumes {
         [SerializeField, Expandable]
         ScreenAsset screen;
         [SerializeField]
+        GameObject speechBox;
+        [SerializeField]
         TextMeshProUGUI speech;
 
         void Start() {
@@ -18,7 +20,7 @@ namespace CatsInCostumes {
                 speech.text = screen.isNarrator
                     ? screen.speech
                     : $"\"{screen.speech}\"";
-                speech.gameObject.SetActive(!string.IsNullOrEmpty(screen.speech));
+                speechBox.SetActive(!string.IsNullOrEmpty(screen.speech));
             }
         }
 

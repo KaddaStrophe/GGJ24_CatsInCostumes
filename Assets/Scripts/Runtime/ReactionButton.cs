@@ -38,6 +38,7 @@ namespace CatsInCostumes {
 
             if (GameManager.TryGetIcon(action.name, out var sprite)) {
                 image.sprite = sprite;
+                image.SetNativeSize();
                 image.enabled = true;
             } else {
                 image.enabled = false;

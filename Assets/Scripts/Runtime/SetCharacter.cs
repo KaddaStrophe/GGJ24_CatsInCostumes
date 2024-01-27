@@ -5,17 +5,20 @@ using UnityEngine.UI;
 namespace CatsInCostumes {
     sealed class SetCharacter : MonoBehaviour, IScreenMessages {
         [SerializeField]
+        GameObject speakerBox;
+        [SerializeField]
         TextMeshProUGUI speaker;
         [SerializeField]
         Image portrait;
 
         public void OnSetScreen(ScreenAsset screen) {
             if (screen.isNarrator) {
-                speaker.gameObject.SetActive(false);
+                speakerBox.SetActive(false);
                 portrait.gameObject.SetActive(false);
             } else {
                 speaker.text = screen.speaker;
-                speaker.gameObject.SetActive(true);
+                speakerBox.SetActive(true);
+                speakerBox.BroadcastMessage(nameof(ContentSizeFitter.SetLayoutHorizontal), SendMessageOptions.DontRequireReceiver);
 
                 if (screen.TryGetSpeakerPortrait(out var sprite)) {
                     portrait.sprite = sprite;
