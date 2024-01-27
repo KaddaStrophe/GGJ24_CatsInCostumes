@@ -123,14 +123,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: AS_Frodo
     originalName: 
-    pivot: {x: 0.42372882, y: 0}
+    pivot: {x: 0.48717952, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 59
+      width: 78
       height: 67
     spriteID: 3bc6cc0e0c1f6ab4f8d1c1ec9773eec1
     spriteBone: []
@@ -143,14 +143,14 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: AS_Frodo_Frame_1
     originalName: 
-    pivot: {x: 0.42372882, y: 0}
+    pivot: {x: 0.59375, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 79
-      width: 59
+      width: 64
       height: 67
     spriteID: 22a2ff8bbc7178e408af0c50cc296efe
     spriteBone: []
@@ -173,17 +173,17 @@ ScriptedImporter:
     - name: AS_Frodo_Frame_0
       frameIndex: 0
       cellRect:
-        x: 15
+        x: 2
         y: 0
-        width: 59
+        width: 78
         height: 67
       spriteId: 3bc6cc0e0c1f6ab4f8d1c1ec9773eec1
     - name: AS_Frodo_Frame_1
       frameIndex: 1
       cellRect:
-        x: 15
+        x: 2
         y: 0
-        width: 59
+        width: 64
         height: 67
       spriteId: 22a2ff8bbc7178e408af0c50cc296efe
     linkedCells: []
