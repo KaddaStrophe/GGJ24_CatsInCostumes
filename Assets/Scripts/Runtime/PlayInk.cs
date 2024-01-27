@@ -5,7 +5,7 @@ using UnityEngine;
 using InkStory = Ink.Runtime.Story;
 
 namespace CatsInCostumes {
-    sealed class PlayInk : MonoBehaviour, IInkMessages {
+    sealed class PlayInk : MonoBehaviour, IInkMessages, IGameMessages {
         [SerializeField]
         TextAsset inkFile;
 
@@ -68,19 +68,21 @@ namespace CatsInCostumes {
                 }
 
                 gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
-                gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), storyHasChoices ? GameState.WaitingForReaction : GameState.PlayingDialog);
+                GameManager.gameState = storyHasChoices
+                    ? GameState.WaitingForReaction
+                    : GameState.PlayingDialog;
             } else {
                 story = null;
 
                 gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), ScreenAsset.empty, SendMessageOptions.DontRequireReceiver);
 
                 if (currentScreen.TryGetNextScene(out var nextScene)) {
-                    gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.WaitingForScene);
+                    GameManager.gameState = GameState.WaitingForScene;
 
                     inkFile = nextScene;
                     Invoke(nameof(SetInk), sceneDelay);
                 } else {
-                    gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.MainMenu);
+                    GameManager.gameState = GameState.MainMenu;
                 }
             }
         }
@@ -114,6 +116,12 @@ namespace CatsInCostumes {
                     gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
                     Invoke(nameof(NextPage), reactionDelay);
                 }
+            }
+        }
+
+        public void OnSetState(GameState state) {
+            if (state == GameState.MainMenu) {
+                gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), ScreenAsset.empty, SendMessageOptions.DontRequireReceiver);
             }
         }
     }

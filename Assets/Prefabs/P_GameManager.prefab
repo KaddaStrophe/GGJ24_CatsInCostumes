@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d5ac913bef4ba42938e54b9c9879af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escapeAction: {fileID: 7804878366489648877, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   advanceAction: {fileID: -8630104623035308676, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   reactions:
   - {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}

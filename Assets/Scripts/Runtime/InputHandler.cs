@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 namespace CatsInCostumes {
     sealed class InputHandler : MonoBehaviour {
         [SerializeField]
+        InputActionReference escapeAction;
+        [SerializeField]
         InputActionReference advanceAction;
 
         [SerializeField]
@@ -26,10 +28,11 @@ namespace CatsInCostumes {
         }
 
         void OnEnable() {
-            if (advanceAction.action is { } action) {
-                action.performed += HandleAdvance;
-                action.Enable();
-            }
+            escapeAction.action.performed += HandleEscape;
+            escapeAction.action.Enable();
+
+            advanceAction.action.performed += HandleAdvance;
+            advanceAction.action.Enable();
 
             for (int i = 0; i < reactions.Length; i++) {
                 if (reactions[i].action is { } reaction) {
@@ -47,10 +50,11 @@ namespace CatsInCostumes {
         }
 
         void OnDisable() {
-            if (advanceAction.action is { } action) {
-                action.performed -= HandleAdvance;
-                action.Disable();
-            }
+            escapeAction.action.performed += HandleEscape;
+            escapeAction.action.Disable();
+
+            advanceAction.action.performed -= HandleAdvance;
+            advanceAction.action.Disable();
 
             for (int i = 0; i < reactions.Length; i++) {
                 if (reactions[i].action is { } reaction) {
@@ -67,6 +71,15 @@ namespace CatsInCostumes {
             }
         }
 
+        void HandleEscape(InputAction.CallbackContext context) {
+            if (GameManager.gameState == GameState.MainMenu) {
+                GameManager.Quit();
+                return;
+            }
+
+            GameManager.gameState = GameState.MainMenu;
+        }
+
         void HandleAdvance(InputAction.CallbackContext context) {
             gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnAdvanceInk));
         }
@@ -78,7 +91,7 @@ namespace CatsInCostumes {
 
         void HandleScene(InputAction.CallbackContext context) {
             string scene = context.action.name;
-            gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnLoadScene), scene);
+            GameManager.LoadScene(scene);
         }
     }
 }

@@ -4,9 +4,10 @@ using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
 
 namespace CatsInCostumes {
-    sealed class GameManager : MonoBehaviour, IGameMessages {
+    sealed class GameManager : MonoBehaviour {
         [Header("Addressables")]
         [SerializeField]
         string backgroundLabel = "backgrounds";
@@ -34,7 +35,16 @@ namespace CatsInCostumes {
         [SerializeField, ParamRef]
         string gameStateParameter;
 
-        internal static GameState gameState { get; private set; }
+        static GameState m_gameState;
+        internal static GameState gameState {
+            get => m_gameState;
+            set {
+                if (m_gameState != value) {
+                    m_gameState = value;
+                    SceneManager.GetActiveScene().BroadcastMessage(nameof(IGameMessages.OnSetState), value);
+                }
+            }
+        }
 
         PARAMETER_DESCRIPTION gameStateDescription;
 
@@ -78,12 +88,18 @@ namespace CatsInCostumes {
             return false;
         }
 
-        public void OnLoadScene(string scene) {
+        internal static void LoadScene(string scene) {
             if (TryGetStory(scene, out var story)) {
-                gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
+                SceneManager.GetActiveScene().BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
             }
         }
 
-        public void OnSetState(GameState state) => gameState = state;
+        internal static void Quit() {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.ExitPlaymode();
+#else
+            Application.Quit();
+#endif
+        }
     }
 }

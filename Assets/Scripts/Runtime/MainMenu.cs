@@ -31,17 +31,11 @@ namespace CatsInCostumes {
         }
 
         public void HandleQuitButtonPressed() {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.ExitPlaymode();
-#else
-            Application.Quit();
-#endif
+            GameManager.Quit();
         }
 
         public void OnSetState(GameState state) {
             selectUI.SetActive(state == GameState.MainMenu);
-        }
-        public void OnLoadScene(string scene) {
         }
     }
 }
