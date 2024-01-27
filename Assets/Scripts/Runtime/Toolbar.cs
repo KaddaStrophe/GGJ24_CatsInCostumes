@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Slothsoft.UnityExtensions;
 using UnityEngine;
 
 namespace CatsInCostumes {
-    sealed class Toolbar : MonoBehaviour {
+    sealed class Toolbar : MonoBehaviour, IGameMessages {
         [SerializeField]
         GameObject buttonPrefab;
+
+        [Space]
+        [SerializeField]
+        CanvasGroup group;
+        [SerializeField]
+        SerializableKeyValuePairs<GameState, float> alphaByState = new();
 
         readonly List<GameObject> buttonInstances = new();
 
@@ -25,6 +32,12 @@ namespace CatsInCostumes {
             }
 
             buttonInstances.Clear();
+        }
+
+        public void OnSetState(GameState state) {
+            group.alpha = alphaByState[state];
+        }
+        public void OnLoadScene(string scene) {
         }
     }
 }

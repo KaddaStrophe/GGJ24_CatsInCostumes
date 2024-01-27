@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkFile: {fileID: 4900000, guid: b8653b14f19b697429cfe831fb020c43, type: 3}
+  reactionDelay: 1
 --- !u!1 &2981817950573110858
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +262,7 @@ GameObject:
   - component: {fileID: 977720072648948888}
   - component: {fileID: 8150337968033972268}
   - component: {fileID: 4174181745245782846}
+  - component: {fileID: 6779802022716154685}
   m_Layer: 5
   m_Name: Toolbar
   m_TagString: Untagged
@@ -326,6 +328,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 2800447487604804881, guid: 2ea56ee17c4a9354da50bed41a9ca206, type: 3}
+  group: {fileID: 6779802022716154685}
+  alphaByState:
+    items:
+    - key: 0
+      value: 0
+    - key: 1
+      value: 0.8
+    - key: 2
+      value: 1
+--- !u!225 &6779802022716154685
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2981817950573110858}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3281415547063755369
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +979,7 @@ GameObject:
   - component: {fileID: 5477654418241891853}
   - component: {fileID: 7289783759053626669}
   - component: {fileID: 6875892373278983688}
+  - component: {fileID: 8068706983647208333}
   m_Layer: 5
   m_Name: Foreground
   m_TagString: Untagged
@@ -1020,3 +1044,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8068706983647208333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466536619947458331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583f028ea85248b4db6a41390a641f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 6875892373278983688}
+  mainMenuSprite: {fileID: 1153395551658478050, guid: 0e3b7e99c2dd494448aaef49fb5a0c5a, type: 3}
+  gameSprite: {fileID: 8468568942372644709, guid: fdb803a500fc48b4c93b55c61d8a9e80, type: 3}

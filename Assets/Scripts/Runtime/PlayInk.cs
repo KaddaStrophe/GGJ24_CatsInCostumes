@@ -11,6 +11,7 @@ namespace CatsInCostumes {
 
         InkStory story;
         ScreenAsset currentScreen;
+        bool storyHasChoices => story is { currentChoices: var choices } && choices.Count > 0;
 
         IEnumerator Start() {
             NextPage();
@@ -35,7 +36,7 @@ namespace CatsInCostumes {
                 return;
             }
 
-            if (story is { currentChoices: var choices } && choices.Count > 0) {
+            if (storyHasChoices) {
                 return;
             }
 
@@ -62,8 +63,10 @@ namespace CatsInCostumes {
                 }
 
                 gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
+                gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), storyHasChoices ? GameState.WaitingForReaction : GameState.PlayingDialog);
             } else {
                 story = null;
+                gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.MainMenu);
             }
         }
 
@@ -74,12 +77,18 @@ namespace CatsInCostumes {
 
         public void OnAdvanceInk() => NextPage();
 
+        [SerializeField]
+        float reactionDelay = 1;
+
         public void OnReact(string reaction) {
             if (story is { currentChoices: var choices }) {
                 int id = choices.FirstIndex(choice => choice.text.Equals(reaction, StringComparison.OrdinalIgnoreCase));
                 if (id != -1) {
                     story.ChooseChoiceIndex(id);
-                    NextPage();
+                    currentScreen.speaker = "";
+                    currentScreen.speech = "";
+                    gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
+                    Invoke(nameof(NextPage), reactionDelay);
                 }
             }
         }
