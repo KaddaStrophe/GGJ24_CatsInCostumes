@@ -83,5 +83,7 @@ namespace CatsInCostumes {
                 gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
             }
         }
+
+        public void OnSetState(GameState state) => gameState = state;
     }
 }
