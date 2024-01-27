@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{75d659d7-cf83-49a9-89e1-944a2a3100a9}">
+		<property name="assetPath">
+			<value>catcallwhistle - 13.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.2668934240362812</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22a0b705-2a82-4697-8162-ad75e0cc3ff9}</destination>
+		</relationship>
+	</object>
+</objects>
