@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5098ad4934463e48b092e7043a7a0ba
+guid: fdb803a500fc48b4c93b55c61d8a9e80
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -79,8 +79,8 @@ ScriptedImporter:
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
-    generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateModelPrefab: 0
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
@@ -92,12 +92,12 @@ ScriptedImporter:
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
-    generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateModelPrefab: 0
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638419704254994050
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Theatre
+  - name: AS_Theatre
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 320
       height: 180
-    spriteID: 958204c8bf70a2044b2cc72f8f11fb15
+    spriteID: e7934a8550173e248ae666b418b2f8ec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,23 +144,59 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -444782881
-    name: Theatre
+    guid: -1095277930
+    name: AS_Theatre
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Theatre
+    - name: AS_Theatre
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 320
         height: 180
-      spriteId: 958204c8bf70a2044b2cc72f8f11fb15
+      spriteId: e7934a8550173e248ae666b418b2f8ec
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
