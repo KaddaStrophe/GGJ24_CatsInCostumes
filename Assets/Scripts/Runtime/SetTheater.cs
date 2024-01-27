@@ -23,7 +23,5 @@ namespace CatsInCostumes {
                 _ => throw new System.NotImplementedException(),
             };
         }
-        public void OnLoadScene(string scene) {
-        }
     }
 }

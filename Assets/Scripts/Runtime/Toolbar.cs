@@ -39,7 +39,5 @@ namespace CatsInCostumes {
         public void OnSetState(GameState state) {
             group.alpha = alphaByState[state];
         }
-        public void OnLoadScene(string scene) {
-        }
     }
 }
