@@ -9,6 +9,8 @@ namespace CatsInCostumes {
         [SerializeField]
         TextMeshProUGUI speaker;
         [SerializeField]
+        Color speakerColor = Color.black;
+        [SerializeField]
         Image portrait;
 
         public void OnSetScreen(ScreenAsset screen) {
@@ -17,6 +19,9 @@ namespace CatsInCostumes {
                 portrait.gameObject.SetActive(false);
             } else {
                 speaker.text = screen.speaker;
+                Color.RGBToHSV(speakerColor, out float h, out float s, out float v);
+                h = screen.speaker.GetHashCode() % 360 / 360f;
+                speaker.color = Color.HSVToRGB(h, s, v);
                 speakerBox.SetActive(true);
                 speakerBox.BroadcastMessage(nameof(ContentSizeFitter.SetLayoutHorizontal), SendMessageOptions.DontRequireReceiver);
 
