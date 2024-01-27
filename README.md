@@ -1,15 +1,14 @@
-# Spill the Tea
-A game about making friends and sharing secrets.
+# Cats in Costumes
+Lord of the rings, if the audience had a soundboard and everyone were cats.
 
 ## Jam Details
-Franken Game Jam 2023
-- Date: 03.11.2023 - 05.11.2023
+Global Game Jam 2024
+- Date: 26.01.2024 - 28.01.2024
 - Site: Universität Bayreuth
-- Theme: "give or take"
+- Theme: "make me laugh"
 
 ## Credits
-- Elisabeth Harzbecker (narrative design)
-- Daniel Schulz (programming)
-- Aki Withers (ui design, 2d art)
-- Tina Wolfrum (project management, ux design, 2d art)
-- Marie-Charleen Wrenger (narrative design)
+- Daniel Schulz (code, game design)
+- Gregor Sönnichsen (writing, ui art)
+- Steffen Schreiber (game design, audio, writing)
+- Katharina Broswik (art, ux design)
