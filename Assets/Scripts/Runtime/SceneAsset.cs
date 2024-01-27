@@ -4,6 +4,17 @@ using UnityEngine.Serialization;
 namespace CatsInCostumes {
     [CreateAssetMenu]
     sealed class ScreenAsset : ScriptableObject {
+        static ScreenAsset m_empty;
+        internal static ScreenAsset empty {
+            get {
+                if (!m_empty) {
+                    m_empty = CreateInstance<ScreenAsset>();
+                }
+
+                return m_empty;
+            }
+        }
+
         [SerializeField]
         internal string background;
 

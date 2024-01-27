@@ -13,6 +13,8 @@ namespace CatsInCostumes {
         ScreenAsset currentScreen;
 
         IEnumerator Start() {
+            NextPage();
+
             yield return GameManager.waitUntilReady;
 
             SetInk();
@@ -22,11 +24,17 @@ namespace CatsInCostumes {
             if (inkFile) {
                 story = new(inkFile.text);
                 currentScreen = ScriptableObject.CreateInstance<ScreenAsset>();
-                NextPage();
             }
+
+            NextPage();
         }
 
         public void NextPage() {
+            if (story is null) {
+                gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), ScreenAsset.empty, SendMessageOptions.DontRequireReceiver);
+                return;
+            }
+
             if (story is { currentChoices: var choices } && choices.Count > 0) {
                 return;
             }
@@ -55,7 +63,7 @@ namespace CatsInCostumes {
 
                 gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), currentScreen, SendMessageOptions.DontRequireReceiver);
             } else {
-                Destroy(gameObject);
+                story = null;
             }
         }
 

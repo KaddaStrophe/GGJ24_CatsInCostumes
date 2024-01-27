@@ -15,11 +15,10 @@ namespace CatsInCostumes {
 
         void UpdateScreen() {
             if (screen) {
-                gameObject.SetActive(!string.IsNullOrEmpty(screen.speech));
-
                 speech.text = screen.isNarrator
                     ? screen.speech
                     : $"\"{screen.speech}\"";
+                speech.gameObject.SetActive(!string.IsNullOrEmpty(screen.speech));
             }
         }
 
