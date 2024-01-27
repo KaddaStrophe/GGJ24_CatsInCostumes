@@ -50,7 +50,8 @@ MonoBehaviour:
   characterLabel: characters
   storyLabel: stories
   iconLabel: icons
-  gameParameter: 
+  gameStateParameter: 
+  gameState: 0
 --- !u!114 &9215874339966104699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,72 +91,72 @@ MonoBehaviour:
   - action: {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -848498612
+        Data2: 1104106777
+        Data3: -776390483
+        Data4: 1820895071
+      Path: event:/SFX/Audience/airhorn
   - action: {fileID: 4117308181713762996, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -157919936
+        Data2: 1146782973
+        Data3: -1309633904
+        Data4: 2083547830
+      Path: event:/SFX/Audience/angryboat
   - action: {fileID: 6097851517180452275, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 897522593
+        Data2: 1260059601
+        Data3: 1325566867
+        Data4: 1277931087
+      Path: event:/SFX/Audience/awwww
   - action: {fileID: -5700591584384265526, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 444662088
+        Data2: 1129454721
+        Data3: -1604239962
+        Data4: -1639098883
+      Path: event:/SFX/Audience/badumtss
   - action: {fileID: -1610503776761932831, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 40609885
+        Data2: 1182642461
+        Data3: 1184635269
+        Data4: 1114058657
+      Path: event:/SFX/Audience/catcallwhistle
   - action: {fileID: -430087484081084391, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1365433336
+        Data2: 1103771321
+        Data3: -1624201283
+        Data4: 1510505562
+      Path: event:/SFX/Audience/cicarda
   - action: {fileID: -8756183111799471533, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1799444231
+        Data2: 1104290918
+        Data3: -1109282923
+        Data4: 1412443823
+      Path: event:/SFX/Audience/clap
   - action: {fileID: -3633326535909101974, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1764081628
+        Data2: 1105627412
+        Data3: -922356850
+        Data4: -359796806
+      Path: event:/SFX/Audience/dundunndunnn
   - action: {fileID: -1109767695786490749, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 55173300
+        Data2: 1288591397
+        Data3: -1877986426
+        Data4: 549191961
+      Path: event:/SFX/Audience/sadduck
