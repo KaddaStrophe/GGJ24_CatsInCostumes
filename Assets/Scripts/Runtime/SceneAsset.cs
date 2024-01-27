@@ -49,5 +49,14 @@ namespace CatsInCostumes {
             sprite = default;
             return false;
         }
+
+        [SerializeField]
+        internal string nextScene;
+
+        internal bool TryGetNextScene(out TextAsset scene) {
+            scene = default;
+            return !string.IsNullOrEmpty(nextScene)
+                && GameManager.TryGetStory(nextScene, out scene);
+        }
     }
 }
