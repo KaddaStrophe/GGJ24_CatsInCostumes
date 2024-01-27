@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +10,17 @@ namespace CatsInCostumes {
         InputActionReference advanceAction;
 
         [SerializeField]
-        InputActionReference[] reactions = Array.Empty<InputActionReference>();
+        internal InputActionReference[] reactions = Array.Empty<InputActionReference>();
+
+        internal static InputHandler instance { get; private set; }
+
+        internal static IEnumerable<InputAction> reactionActions => instance
+            ? instance.reactions.Select(r => r.action)
+            : Enumerable.Empty<InputAction>();
+
+        void Awake() {
+            instance = this;
+        }
 
         void OnEnable() {
             if (advanceAction.action is { } action) {
@@ -39,12 +51,12 @@ namespace CatsInCostumes {
         }
 
         void HandleAdvance(InputAction.CallbackContext context) {
-            gameObject.BroadcastMessage(nameof(IInkMessages.OnAdvanceInk), SendMessageOptions.DontRequireReceiver);
+            gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnAdvanceInk));
         }
 
         void HandleReaction(InputAction.CallbackContext context) {
-            string reaction = context.action.name.ToLower();
-            gameObject.BroadcastMessage(nameof(IInkMessages.OnReact), reaction, SendMessageOptions.DontRequireReceiver);
+            string reaction = context.action.name;
+            gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnReact), reaction);
         }
     }
 }

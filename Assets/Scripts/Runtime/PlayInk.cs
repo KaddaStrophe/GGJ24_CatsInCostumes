@@ -76,7 +76,7 @@ namespace CatsInCostumes {
 
         public void OnReact(string reaction) {
             if (story is { currentChoices: var choices }) {
-                int id = choices.FirstIndex(choice => choice.text == reaction);
+                int id = choices.FirstIndex(choice => choice.text.Equals(reaction, StringComparison.OrdinalIgnoreCase));
                 if (id != -1) {
                     story.ChooseChoiceIndex(id);
                     NextPage();
