@@ -59,6 +59,11 @@ namespace CatsInCostumes {
                                 ? mood
                                 : Mood.Neutral;
                             break;
+                        case "nextScene":
+                            currentScreen.nextScene = value;
+                            break;
+                        default:
+                            throw new NotImplementedException(key);
                     }
                 }
 
@@ -66,7 +71,17 @@ namespace CatsInCostumes {
                 gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), storyHasChoices ? GameState.WaitingForReaction : GameState.PlayingDialog);
             } else {
                 story = null;
-                gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.MainMenu);
+
+                gameObject.BroadcastMessage(nameof(IScreenMessages.OnSetScreen), ScreenAsset.empty, SendMessageOptions.DontRequireReceiver);
+
+                if (currentScreen.TryGetNextScene(out var nextScene)) {
+                    gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.WaitingForScene);
+
+                    inkFile = nextScene;
+                    Invoke(nameof(SetInk), sceneDelay);
+                } else {
+                    gameObject.scene.BroadcastMessage(nameof(IGameMessages.OnSetState), GameState.MainMenu);
+                }
             }
         }
 
@@ -77,8 +92,11 @@ namespace CatsInCostumes {
 
         public void OnAdvanceInk() => NextPage();
 
+        [Space]
         [SerializeField]
         float reactionDelay = 1;
+        [SerializeField]
+        float sceneDelay = 2;
 
         public void OnReact(string reaction) {
             if (story is { currentChoices: var choices }) {

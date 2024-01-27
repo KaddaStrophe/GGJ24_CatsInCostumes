@@ -15,9 +15,13 @@ namespace CatsInCostumes {
         }
 
         public void OnSetState(GameState state) {
-            image.sprite = state == GameState.MainMenu
-                ? mainMenuSprite
-                : gameSprite;
+            image.sprite = state switch {
+                GameState.MainMenu => mainMenuSprite,
+                GameState.PlayingDialog => gameSprite,
+                GameState.WaitingForReaction => gameSprite,
+                GameState.WaitingForScene => mainMenuSprite,
+                _ => throw new System.NotImplementedException(),
+            };
         }
         public void OnLoadScene(string scene) {
         }

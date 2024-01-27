@@ -3,5 +3,6 @@
         MainMenu,
         PlayingDialog,
         WaitingForReaction,
+        WaitingForScene,
     }
 }
