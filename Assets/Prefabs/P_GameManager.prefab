@@ -50,6 +50,7 @@ MonoBehaviour:
   characterLabel: characters
   storyLabel: stories
   iconLabel: icons
+  gameParameter: 
 --- !u!114 &9215874339966104699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,3 +86,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1000b770e8487345a7189510c20a8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reactionEvents:
+  - action: {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: 4117308181713762996, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: 6097851517180452275, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -5700591584384265526, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -1610503776761932831, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -430087484081084391, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -8756183111799471533, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -3633326535909101974, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - action: {fileID: -1109767695786490749, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
