@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace CatsInCostumes {
     sealed class GameManager : MonoBehaviour {
+        [Header("Addressables")]
         [SerializeField]
         string backgroundLabel = "backgrounds";
         [SerializeField]
@@ -27,13 +29,20 @@ namespace CatsInCostumes {
         internal static bool TryGetStory(string id, out TextAsset asset) => TryGetFromDictionary(id, out asset, stories);
         internal static bool TryGetIcon(string id, out Sprite asset) => TryGetFromDictionary(id, out asset, icons);
 
+        [Header("FMOD")]
+        [SerializeField, ParamRef]
+        string gameParameter;
+
         IEnumerator Start() {
             yield return LoadLabelToDictionary(backgroundLabel, backgrounds);
             yield return LoadLabelToDictionary(characterLabel, characters);
             yield return LoadLabelToDictionary(storyLabel, stories);
             yield return LoadLabelToDictionary(iconLabel, icons);
 
-            yield return null;
+            yield return new WaitUntil(() => RuntimeManager.HaveAllBanksLoaded);
+
+            if (RuntimeManager.StudioSystem.getParameterDescriptionByName(gameParameter, out var description) == FMOD.RESULT.OK) {
+            }
 
             isReady = true;
         }
