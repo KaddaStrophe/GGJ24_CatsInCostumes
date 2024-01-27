@@ -25,9 +25,6 @@ namespace CatsInCostumes {
                 speech.text = screen.isNarrator
                     ? screen.speech
                     : $"\"{screen.speech}\"";
-                speech.fontStyle = screen.isNarrator
-                    ? FontStyles.Normal
-                    : FontStyles.Italic;
             }
         }
 
