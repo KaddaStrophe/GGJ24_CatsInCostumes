@@ -17,6 +17,8 @@ namespace CatsInCostumes {
         readonly List<GameObject> buttonInstances = new();
 
         IEnumerator Start() {
+            OnSetState(GameState.MainMenu);
+
             yield return GameManager.waitUntilReady;
 
             foreach (var action in InputHandler.reactionActions) {

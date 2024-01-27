@@ -11,24 +11,48 @@ namespace CatsInCostumes {
 
         [SerializeField]
         string narratorName = "NARRATOR";
+        [SerializeField]
+        EventReference meowingReference = new();
 
-        string speaker;
+        ScreenAsset screen;
+        string speaker => !screen || screen.isNarrator
+            ? narratorName
+            : screen.speaker;
+
         bool isSetUp;
 
         IEnumerator Start() {
-            speaker = narratorName;
-
             yield return new WaitUntil(() => RuntimeManager.HaveAllBanksLoaded);
 
             isSetUp = RuntimeManager.StudioSystem.getParameterDescriptionByName(speakerParameter, out speakerDescription) == FMOD.RESULT.OK;
 
+            meowingInstance = RuntimeManager.CreateInstance(meowingReference.Guid);
+
             UpdateSpeaker();
         }
 
+        bool shouldBeMeowing => screen && screen.isMeowing;
+        bool isMeowing;
+        EventInstance meowingInstance;
+
+        void Update() {
+            if (!meowingInstance.isValid()) {
+                return;
+            }
+
+            if (isMeowing != shouldBeMeowing) {
+                isMeowing = shouldBeMeowing;
+
+                if (isMeowing) {
+                    meowingInstance.start();
+                } else {
+                    meowingInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
+            }
+        }
+
         public void OnSetScreen(ScreenAsset screen) {
-            speaker = screen.isNarrator
-                ? narratorName
-                : screen.speaker;
+            this.screen = screen;
             UpdateSpeaker();
         }
 

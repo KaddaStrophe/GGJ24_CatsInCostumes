@@ -1,18 +1,31 @@
+using System.Collections;
 using UnityEngine;
 
 namespace CatsInCostumes {
-    sealed class MainMenu : MonoBehaviour {
+    sealed class MainMenu : MonoBehaviour, IGameMessages {
+        [SerializeField]
+        string firstScene;
+        [SerializeField]
+        GameObject selectUI;
+        [SerializeField]
+        GameObject creditsUI;
 
-        public GameObject creditsUI;
-        public GameObject selectUI;
+        IEnumerator Start() {
+            selectUI.SetActive(false);
+            creditsUI.SetActive(false);
+
+            yield return GameManager.waitUntilReady;
+
+            OnSetState(GameManager.gameState);
+        }
 
         public void HandleStartButtonPressed() {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+            if (GameManager.TryGetStory(firstScene, out var story)) {
+                gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
+            }
         }
 
         public void HandleCreditsButtonPressed() {
-            Debug.Log(creditsUI.activeSelf);
-            Debug.Log(selectUI.activeSelf);
             creditsUI.SetActive(!creditsUI.activeSelf);
             selectUI.SetActive(!selectUI.activeSelf);
         }
@@ -23,6 +36,12 @@ namespace CatsInCostumes {
 #else
             Application.Quit();
 #endif
+        }
+
+        public void OnSetState(GameState state) {
+            selectUI.SetActive(state == GameState.MainMenu);
+        }
+        public void OnLoadScene(string scene) {
         }
     }
 }

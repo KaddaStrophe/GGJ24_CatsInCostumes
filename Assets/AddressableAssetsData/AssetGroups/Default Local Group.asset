@@ -101,6 +101,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - backgrounds
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cbfed2eb0c6776459a2b93964cc330f
+    m_Address: NazgulAtWeathertop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - stories
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f98379392257d31448f38206c1498c29
+    m_Address: Weathertop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:

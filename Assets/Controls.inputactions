@@ -96,7 +96,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "CouncilOfElrond",
+                    "name": "NazgulAtWeathertop",
                     "type": "Button",
                     "id": "a8543c43-add3-453a-93d4-af8ec44a777a",
                     "expectedControlType": "Button",
@@ -105,7 +105,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Scene02",
+                    "name": "CouncilOfElrond",
                     "type": "Button",
                     "id": "21900616-2691-4eb2-9e85-4908dc58941b",
                     "expectedControlType": "Button",
@@ -126,6 +126,15 @@
                     "name": "Scene04",
                     "type": "Button",
                     "id": "79ede90c-766a-4c4d-b968-2bd5e742df2a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MainMenu",
+                    "type": "Button",
+                    "id": "c42f3ac0-6939-45d0-9254-d6accffd3218",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -245,28 +254,6 @@
                 },
                 {
                     "name": "",
-                    "id": "804b631f-e78e-4898-a9f9-9a8ad368733b",
-                    "path": "<Keyboard>/f1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CouncilOfElrond",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fc06d366-74cf-4129-8cf8-c95560b52d44",
-                    "path": "<Keyboard>/f2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Scene02",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "1e8e9134-9443-4f99-bfc4-45a821594c4d",
                     "path": "<Keyboard>/f3",
                     "interactions": "",
@@ -284,6 +271,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Scene04",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e216530-b140-41d5-9fb9-7f7159ad340a",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc06d366-74cf-4129-8cf8-c95560b52d44",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CouncilOfElrond",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "804b631f-e78e-4898-a9f9-9a8ad368733b",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NazgulAtWeathertop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
