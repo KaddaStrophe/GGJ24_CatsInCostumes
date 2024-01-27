@@ -2,29 +2,20 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace CatsInCostumes {
-    sealed class ReactionButton : MonoBehaviour, IActionMessage, IInkMessages {
+    sealed class ReactionButton : MonoBehaviour, IActionMessage, IInkMessages, IPointerClickHandler {
         [SerializeField]
         TextMeshProUGUI binding;
         [SerializeField]
         Image buttonImage;
         [SerializeField]
         Image iconImage;
-        [SerializeField]
-        Button button;
 
         InputAction action;
-
-        void OnEnable() {
-            button.onClick.AddListener(Invoke);
-        }
-
-        void OnDisable() {
-            button.onClick.RemoveListener(Invoke);
-        }
 
         void Invoke() {
             string reaction = action.name;
@@ -58,7 +49,6 @@ namespace CatsInCostumes {
         public void OnReact(string reaction) {
             if (action.name.Equals(reaction, StringComparison.OrdinalIgnoreCase)) {
                 buttonImage.color = highlightColor;
-                button.Select();
                 Invoke(nameof(ClearColor), colorDelay);
             }
         }
@@ -70,6 +60,10 @@ namespace CatsInCostumes {
 
         void ClearColor() {
             buttonImage.color = Color.white;
+        }
+
+        public void OnPointerClick(PointerEventData eventData) {
+            Invoke();
         }
     }
 }

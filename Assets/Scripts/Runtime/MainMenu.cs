@@ -16,6 +16,10 @@ namespace CatsInCostumes {
 
             yield return GameManager.waitUntilReady;
 
+            yield return null;
+            yield return null;
+            yield return null;
+
             OnSetState(GameManager.gameState);
         }
 
@@ -28,6 +32,12 @@ namespace CatsInCostumes {
         public void HandleCreditsButtonPressed() {
             creditsUI.SetActive(!creditsUI.activeSelf);
             selectUI.SetActive(!selectUI.activeSelf);
+
+            if (creditsUI.activeSelf) {
+                creditsUI.SelectFirstSelectable();
+            } else {
+                selectUI.SelectFirstSelectable();
+            }
         }
 
         public void HandleQuitButtonPressed() {
@@ -36,6 +46,9 @@ namespace CatsInCostumes {
 
         public void OnSetState(GameState state) {
             selectUI.SetActive(state == GameState.MainMenu);
+            if (selectUI.activeSelf) {
+                selectUI.SelectFirstSelectable();
+            }
         }
     }
 }

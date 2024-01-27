@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace CatsInCostumes {
     static class Extensions {
@@ -14,6 +15,13 @@ namespace CatsInCostumes {
             var objects = scene.GetRootGameObjects();
             for (int i = 0; i < objects.Length; i++) {
                 objects[i].BroadcastMessage(message, context, SendMessageOptions.DontRequireReceiver);
+            }
+        }
+
+        internal static void SelectFirstSelectable(this GameObject obj) {
+            var selectable = obj.GetComponentInChildren<Selectable>();
+            if (selectable) {
+                selectable.Select();
             }
         }
     }

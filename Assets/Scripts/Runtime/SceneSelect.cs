@@ -10,12 +10,19 @@ namespace CatsInCostumes {
         readonly List<GameObject> buttonInstances = new();
 
         void OnEnable() {
-            StartCoroutine(Start_Co());
+            if (GameManager.isReady) {
+                CreateButtons();
+            } else {
+                StartCoroutine(Start_Co());
+            }
         }
 
         IEnumerator Start_Co() {
             yield return GameManager.waitUntilReady;
+            CreateButtons();
+        }
 
+        void CreateButtons() {
             foreach (var action in InputHandler.sceneActions) {
                 var button = Instantiate(buttonPrefab, transform);
                 button.BroadcastMessage(nameof(IActionMessage.OnSetAction), action, SendMessageOptions.DontRequireReceiver);

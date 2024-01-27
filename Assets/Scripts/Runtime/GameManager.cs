@@ -23,7 +23,7 @@ namespace CatsInCostumes {
         static Dictionary<string, Sprite> icons = new();
 
         internal static readonly WaitUntil waitUntilReady = new(() => isReady);
-        static bool isReady = false;
+        internal static bool isReady { get; private set; }
 
         internal static bool TryGetBackground(string id, out Sprite asset) => TryGetFromDictionary(id, out asset, backgrounds);
         internal static bool TryGetCharacter(string id, out CharacterAsset asset) => TryGetFromDictionary(id, out asset, characters);

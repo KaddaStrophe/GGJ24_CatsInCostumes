@@ -14,6 +14,8 @@ namespace CatsInCostumes {
         bool storyHasChoices => story is { currentChoices: var choices } && choices.Count > 0;
 
         IEnumerator Start() {
+            currentScreen = ScreenAsset.empty;
+
             NextPage();
 
             yield return GameManager.waitUntilReady;
