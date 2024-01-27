@@ -19,6 +19,9 @@ namespace CatsInCostumes {
         }
 
         [SerializeField]
+        EventReference wrongStateEvent = new();
+
+        [SerializeField]
         ReactionReference[] reactionEvents = Array.Empty<ReactionReference>();
 
         bool TryGetReference(string reaction, out EventReference reference) {
@@ -44,6 +47,10 @@ namespace CatsInCostumes {
             }
 
             RuntimeManager.PlayOneShot(reference);
+
+            if (GameManager.gameState == GameState.PlayingDialog) {
+                RuntimeManager.PlayOneShot(wrongStateEvent);
+            }
         }
     }
 }

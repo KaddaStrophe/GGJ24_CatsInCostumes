@@ -51,7 +51,6 @@ MonoBehaviour:
   storyLabel: stories
   iconLabel: icons
   gameStateParameter: 
-  gameState: 0
 --- !u!114 &9215874339966104699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +91,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1000b770e8487345a7189510c20a8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongStateEvent:
+    Guid:
+      Data1: -371434633
+      Data2: 1218180442
+      Data3: -1966200909
+      Data4: -1684143982
+    Path: event:/SFX/Audience/annoyedaudience
   reactionEvents:
   - action: {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:

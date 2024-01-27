@@ -34,8 +34,7 @@ namespace CatsInCostumes {
 
         void UpdateSpeaker() {
             if (isSetUp && !string.IsNullOrEmpty(speaker)) {
-                var result = RuntimeManager.StudioSystem.setParameterByIDWithLabel(speakerDescription.id, speaker);
-                Debug.Log($"Sent {speaker} to FMOD: {result}");
+                RuntimeManager.StudioSystem.setParameterByIDWithLabel(speakerDescription.id, speaker);
             }
         }
     }

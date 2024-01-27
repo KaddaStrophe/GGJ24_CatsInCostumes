@@ -33,8 +33,8 @@ namespace CatsInCostumes {
         [Header("FMOD")]
         [SerializeField, ParamRef]
         string gameStateParameter;
-        [SerializeField]
-        GameState gameState = GameState.MainMenu;
+
+        internal static GameState gameState { get; private set; }
 
         PARAMETER_DESCRIPTION gameStateDescription;
 
