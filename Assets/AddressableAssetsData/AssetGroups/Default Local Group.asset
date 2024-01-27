@@ -95,6 +95,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - icons
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 493aaf2249e137b4ba173dc0a1ab27c9
+    m_Address: Frodo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characters
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
