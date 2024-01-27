@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8cd088ab31b27f4686737fa1fc9f726
+guid: c2c9a7f1d2df3064999deab849ce970f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638419525058729135
+  platformSettingsDirtyTick: 638419495500106550
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Unknown
+  - name: AS_Gimli_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49999997, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 320
-      height: 180
-    spriteID: 40654e120ded4d74789dfe257e940eae
+      width: 74
+      height: 81
+    spriteID: 4bed476765dcb464fbe4bab05135915a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,23 +141,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: AS_Gimli_Frame_1
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 93
+      width: 74
+      height: 81
+    spriteID: 68e18ca2ec646cd448ec75f3bff7e7ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 93}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 390544132
-    name: Unknown
+    guid: 1619153019
+    name: AS_Gimli
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Unknown
+    - name: AS_Gimli_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 3
         y: 0
-        width: 320
-        height: 180
-      spriteId: 40654e120ded4d74789dfe257e940eae
+        width: 74
+        height: 81
+      spriteId: 4bed476765dcb464fbe4bab05135915a
+    - name: AS_Gimli_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 3
+        y: 0
+        width: 74
+        height: 81
+      spriteId: 68e18ca2ec646cd448ec75f3bff7e7ee
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -200,4 +228,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 320, y: 180}
+  canvasSize: {x: 80, y: 100}

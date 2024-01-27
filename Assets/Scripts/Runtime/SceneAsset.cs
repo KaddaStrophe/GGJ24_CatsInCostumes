@@ -1,20 +1,53 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace CatsInCostumes {
     [CreateAssetMenu]
     sealed class ScreenAsset : ScriptableObject {
+        static ScreenAsset m_empty;
+        internal static ScreenAsset empty {
+            get {
+                if (!m_empty) {
+                    m_empty = CreateInstance<ScreenAsset>();
+                }
+
+                return m_empty;
+            }
+        }
+
         [SerializeField]
         internal string background;
 
+        [SerializeField, FormerlySerializedAs(nameof(speaker))]
+        string speakerId;
         [SerializeField]
-        internal string speaker;
+        CharacterAsset speakerAsset;
+
+        internal string speaker {
+            get => speakerId;
+            set {
+                if (speakerId != value) {
+                    speakerId = value;
+                    speakerAsset = CharacterAsset.GetAssetById(value);
+                }
+            }
+        }
 
         [SerializeField]
-        internal string mood;
+        internal Mood mood;
 
         [SerializeField]
         internal string speech;
 
-        internal bool isNarrator => string.IsNullOrEmpty(speaker) || speaker == "-";
+        internal bool isNarrator => CharacterAsset.IsNarrator(speaker);
+
+        internal bool TryGetSpeakerPortrait(out Sprite sprite) {
+            if (speakerAsset) {
+                return speakerAsset.TryGetSprite(mood, out sprite);
+            }
+
+            sprite = default;
+            return false;
+        }
     }
 }
