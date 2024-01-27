@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,7 +10,9 @@ namespace CatsInCostumes {
         [SerializeField]
         TextMeshProUGUI binding;
         [SerializeField]
-        Image image;
+        Image buttonImage;
+        [SerializeField]
+        Image iconImage;
         [SerializeField]
         Button button;
 
@@ -37,11 +40,11 @@ namespace CatsInCostumes {
                 .Split('/')[^1];
 
             if (GameManager.TryGetIcon(action.name, out var sprite)) {
-                image.sprite = sprite;
-                image.SetNativeSize();
-                image.enabled = true;
+                iconImage.sprite = sprite;
+                iconImage.SetNativeSize();
+                iconImage.enabled = true;
             } else {
-                image.enabled = false;
+                iconImage.enabled = false;
             }
         }
 
@@ -53,11 +56,9 @@ namespace CatsInCostumes {
         public void OnSetInk(TextAsset ink) { }
         public void OnAdvanceInk() { }
         public void OnReact(string reaction) {
-            if (action.name == reaction) {
+            if (action.name.Equals(reaction, StringComparison.OrdinalIgnoreCase)) {
+                buttonImage.color = highlightColor;
                 button.Select();
-                var colors = button.colors;
-                colors.colorMultiplier *= colorMultiplier;
-                button.colors = colors;
                 Invoke(nameof(ClearColor), colorDelay);
             }
         }
@@ -65,12 +66,10 @@ namespace CatsInCostumes {
         [SerializeField]
         float colorDelay = 1;
         [SerializeField]
-        float colorMultiplier = 10;
+        Color highlightColor = Color.green;
 
         void ClearColor() {
-            var colors = button.colors;
-            colors.colorMultiplier /= colorMultiplier;
-            button.colors = colors;
+            buttonImage.color = Color.white;
         }
     }
 }
