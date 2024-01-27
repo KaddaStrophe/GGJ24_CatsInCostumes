@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2c9a7f1d2df3064999deab849ce970f
+guid: 8f73816b4573f2b489980fba6b0bf171
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638419495500106550
+  platformSettingsDirtyTick: 638419992419864720
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,38 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: AS_Gimli_Frame_0
+  - name: AS_Aragorn_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 112
-      width: 80
-      height: 81
-    spriteID: 4bed476765dcb464fbe4bab05135915a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 112}
-  - name: AS_Gimli_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.45945945, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 80
-      height: 100
-    spriteID: 68e18ca2ec646cd448ec75f3bff7e7ee
+      width: 74
+      height: 90
+    spriteID: 5a0758e274ffcfd498a301675e35a841
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,31 +141,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: AS_Aragorn_Frame_1
+    originalName: 
+    pivot: {x: 0.45945945, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 102
+      width: 74
+      height: 90
+    spriteID: a3eb988bfd56f9f488715b0a778b813b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 102}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1619153019
-    name: AS_Gimli
+    guid: -377065373
+    name: AS_Aragorn
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: AS_Gimli_Frame_0
+    - name: AS_Aragorn_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 6
         y: 0
-        width: 80
-        height: 81
-      spriteId: 4bed476765dcb464fbe4bab05135915a
-    - name: AS_Gimli_Frame_1
+        width: 74
+        height: 90
+      spriteId: 5a0758e274ffcfd498a301675e35a841
+    - name: AS_Aragorn_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
+        x: 6
         y: 0
-        width: 80
-        height: 100
-      spriteId: 68e18ca2ec646cd448ec75f3bff7e7ee
+        width: 74
+        height: 90
+      spriteId: a3eb988bfd56f9f488715b0a778b813b
     linkedCells: []
     parentIndex: -1
   platformSettings:
