@@ -284,6 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5610990523171956294}
   - component: {fileID: 7888333960080453386}
+  - component: {fileID: 8288899527056493003}
   m_Layer: 5
   m_Name: Dialog
   m_TagString: Untagged
@@ -326,8 +327,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screen: {fileID: 11400000, guid: 24f65e075ce1aa24299a34b47bbb3fd2, type: 2}
-  speaker: {fileID: 5670826821926622599}
   speech: {fileID: 833504661111951184}
+--- !u!114 &8288899527056493003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3835487415083347128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a76d44b9d1fca4fb8d78f8284466eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaker: {fileID: 5670826821926622599}
+  portrait: {fileID: 3444766793352118165}
 --- !u!1 &5671507222508532048
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9130450614748881074, guid: c2c9a7f1d2df3064999deab849ce970f, type: 3}
+  m_Sprite: {fileID: 5060454867277503329, guid: c2c9a7f1d2df3064999deab849ce970f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

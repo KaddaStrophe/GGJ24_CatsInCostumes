@@ -31,6 +31,7 @@ And Gimli arose from his chair, took a swing and smote his axe upon The Ring. Bu
 
 == s01_airhorn ==
 # speaker Gimli
+# mood shook
 Oh why! Yes, my action should indeed be repeated!
 
 # speaker -

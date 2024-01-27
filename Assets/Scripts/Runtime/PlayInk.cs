@@ -1,3 +1,4 @@
+using System;
 using MyBox;
 using UnityEngine;
 using InkStory = Ink.Runtime.Story;
@@ -42,7 +43,9 @@ namespace CatsInCostumes {
                             currentScreen.speaker = value;
                             break;
                         case "mood":
-                            currentScreen.mood = value;
+                            currentScreen.mood = Enum.TryParse<Mood>(value, true, out var mood)
+                                ? mood
+                                : Mood.Neutral;
                             break;
                     }
                 }

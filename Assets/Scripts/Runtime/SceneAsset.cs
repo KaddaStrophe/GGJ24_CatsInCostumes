@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace CatsInCostumes {
     [CreateAssetMenu]
@@ -6,15 +7,27 @@ namespace CatsInCostumes {
         [SerializeField]
         internal string background;
 
+        [SerializeField, FormerlySerializedAs(nameof(speaker))]
+        string speakerId;
         [SerializeField]
-        internal string speaker;
+        internal CharacterAsset speakerAsset;
+
+        internal string speaker {
+            get => speakerId;
+            set {
+                if (speakerId != value) {
+                    speakerId = value;
+                    speakerAsset = CharacterAsset.GetAssetById(value);
+                }
+            }
+        }
 
         [SerializeField]
-        internal string mood;
+        internal Mood mood;
 
         [SerializeField]
         internal string speech;
 
-        internal bool isNarrator => string.IsNullOrEmpty(speaker) || speaker == "-";
+        internal bool isNarrator => CharacterAsset.IsNarrator(speaker);
     }
 }
