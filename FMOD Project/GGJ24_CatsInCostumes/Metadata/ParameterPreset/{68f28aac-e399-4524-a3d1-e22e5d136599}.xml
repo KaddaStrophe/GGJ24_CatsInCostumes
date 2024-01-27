@@ -16,19 +16,22 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>10</value>
+			<value>13</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>NARRATOR</value>
-			<value>ELROND</value>
-			<value>GIMLI</value>
-			<value>BOROMIR</value>
-			<value>LEGOLAS</value>
-			<value>GANDALF</value>
-			<value>FRODO</value>
-			<value>THE DARK RIDER</value>
-			<value>ARAGORN</value>
-			<value>OTHER DARK RIDERS</value>
+			<value>Elrond</value>
+			<value>Gimli</value>
+			<value>Boromir</value>
+			<value>Legolas</value>
+			<value>Sam</value>
+			<value>Gandalf</value>
+			<value>Frodo</value>
+			<value>The Dark Rider</value>
+			<value>Aragorn</value>
+			<value>Other Dark Rider</value>
+			<value>Another Dark Rider</value>
+			<value>Another Another Dark Rider</value>
 		</property>
 		<property name="isGlobal">
 			<value>true</value>
