@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9110ad1417066648a5e5258dd7457b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstScene: CouncilOfElrond
+  firstScene: NazgulAtWeathertop
   selectUI: {fileID: 8237087609658616236}
   creditsUI: {fileID: 6258367690193817652}
 --- !u!1 &7375325328039129675
