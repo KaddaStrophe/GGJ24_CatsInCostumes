@@ -96,7 +96,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Scene01",
+                    "name": "CouncilOfElrond",
                     "type": "Button",
                     "id": "a8543c43-add3-453a-93d4-af8ec44a777a",
                     "expectedControlType": "Button",
@@ -250,7 +250,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Scene01",
+                    "action": "CouncilOfElrond",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
