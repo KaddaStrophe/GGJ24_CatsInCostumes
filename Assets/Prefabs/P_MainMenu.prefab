@@ -1002,11 +1002,11 @@ MonoBehaviour:
   creditsUI: {fileID: 6258367690193817652}
   exitSound:
     Guid:
-      Data1: 55173300
-      Data2: 1288591397
-      Data3: -1877986426
-      Data4: 549191961
-    Path: event:/SFX/Audience/sadduck
+      Data1: -1136351051
+      Data2: 1143842922
+      Data3: 543840177
+      Data4: 427605865
+    Path: event:/SFX/Audience/buuuh
   exitDelay: 2
 --- !u!1 &7375325328039129675
 GameObject:

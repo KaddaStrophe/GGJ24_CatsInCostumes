@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8057844671357735677}
   - component: {fileID: 9215874339966104699}
   - component: {fileID: 3123172047711324524}
+  - component: {fileID: 5118565997925775862}
   m_Layer: 0
   m_Name: P_GameManager
   m_TagString: Untagged
@@ -175,8 +176,34 @@ MonoBehaviour:
   - action: {fileID: 7804878366489648877, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
-        Data1: 55173300
-        Data2: 1288591397
-        Data3: -1877986426
-        Data4: 549191961
-      Path: event:/SFX/Audience/sadduck
+        Data1: -1136351051
+        Data2: 1143842922
+        Data3: 543840177
+        Data4: 427605865
+      Path: event:/SFX/Audience/buuuh
+--- !u!114 &5118565997925775862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793785462613799452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09cccc980df2db4eaab18a14ca5cee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuMusic:
+    Guid:
+      Data1: 281090152
+      Data2: 1201711614
+      Data3: -1140841563
+      Data4: 192528962
+    Path: event:/Music/the_ring
+  gameMusic:
+    Guid:
+      Data1: -500152200
+      Data2: 1326248585
+      Data3: -1210091867
+      Data4: 1779268144
+    Path: event:/Music/the_shire

@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,6 +30,31 @@ namespace CatsInCostumes {
         internal static void PlayOneShot(this in EventReference reference) {
             if (!reference.IsNull) {
                 RuntimeManager.PlayOneShot(reference);
+            }
+        }
+
+        internal static void SetIsPlaying(this in EventInstance instance, bool isPlaying) {
+            if (!instance.isValid()) {
+                return;
+            }
+
+            if (instance.getPlaybackState(out var state) != FMOD.RESULT.OK) {
+                return;
+            }
+
+            switch (state) {
+                case PLAYBACK_STATE.PLAYING:
+                    if (!isPlaying) {
+                        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    }
+
+                    break;
+                case PLAYBACK_STATE.STOPPED:
+                    if (isPlaying) {
+                        instance.start();
+                    }
+
+                    break;
             }
         }
     }
