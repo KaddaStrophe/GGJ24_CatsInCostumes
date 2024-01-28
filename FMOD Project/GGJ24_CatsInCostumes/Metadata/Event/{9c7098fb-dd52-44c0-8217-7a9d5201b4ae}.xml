@@ -159,18 +159,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{a91a57e7-696e-4d7a-a443-f3b7a184c725}" />
 	<object class="MixerBusFader" id="{90689cf1-33eb-4910-a28c-702a7b6e3997}" />
-	<object class="PannerEffect" id="{f0125af0-c758-4c9b-9faf-b58653ca66e9}">
-		<relationship name="modulators">
-			<destination>{5307d804-be68-4ee0-a7fa-f8090125c33c}</destination>
-		</relationship>
-	</object>
+	<object class="PannerEffect" id="{f0125af0-c758-4c9b-9faf-b58653ca66e9}" />
 	<object class="MixerBusFader" id="{c6f8762d-3619-4fc0-aa58-ad8592d06b45}" />
-	<object class="RandomizerModulator" id="{5307d804-be68-4ee0-a7fa-f8090125c33c}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>stereoPan</value>
-		</property>
-		<property name="amount">
-			<value>100</value>
-		</property>
-	</object>
 </objects>
