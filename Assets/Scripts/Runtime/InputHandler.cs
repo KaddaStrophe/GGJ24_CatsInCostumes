@@ -77,12 +77,6 @@ namespace CatsInCostumes {
         }
 
         void HandleEscape(InputAction.CallbackContext context) {
-            if (GameManager.gameState is GameState.MainMenu or GameState.Exit) {
-                GameManager.gameState = GameState.Exit;
-                return;
-            }
-
-            GameManager.gameState = GameState.MainMenu;
         }
 
         void HandleAdvance(InputAction.CallbackContext context) {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Slothsoft.UnityExtensions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,8 +15,16 @@ namespace CatsInCostumes {
         Image buttonImage;
         [SerializeField]
         Image iconImage;
+        [SerializeField]
+        InputActionReference actionReference;
 
         InputAction action;
+
+        void Awake() {
+            if (actionReference) {
+                OnSetAction(actionReference.action);
+            }
+        }
 
         void Invoke() {
             string reaction = action.name;
@@ -23,12 +32,24 @@ namespace CatsInCostumes {
         }
 
         void UpdateButton() {
-            binding.text = action
+            char[] text = action
                 .bindings
                 .DefaultIfEmpty(new InputBinding("?"))
                 .FirstOrDefault()
                 .path
-                .Split('/')[^1];
+                .Split('/')[^1]
+                .ToCharArray();
+
+            text[0] = char.ToUpper(text[0]);
+
+            if (text.Length > 3) {
+                text = text[..3];
+                if (transform is RectTransform rTransform) {
+                    rTransform.sizeDelta = rTransform.sizeDelta.WithX(30);
+                }
+            }
+
+            binding.text = new(text);
 
             if (GameManager.TryGetIcon(action.name, out var sprite)) {
                 iconImage.sprite = sprite;

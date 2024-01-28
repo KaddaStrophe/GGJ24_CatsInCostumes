@@ -50,7 +50,6 @@ MonoBehaviour:
   characterLabel: characters
   storyLabel: stories
   iconLabel: icons
-  gameStateParameter: 
 --- !u!114 &9215874339966104699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,6 +65,7 @@ MonoBehaviour:
   escapeAction: {fileID: 7804878366489648877, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   advanceAction: {fileID: -8630104623035308676, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   reactions:
+  - {fileID: 7804878366489648877, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   - {fileID: -4054943840938355273, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   - {fileID: -1109767695786490749, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
   - {fileID: -430087484081084391, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
@@ -165,6 +165,14 @@ MonoBehaviour:
         Data4: -359796806
       Path: event:/SFX/Audience/dundunndunnn
   - action: {fileID: -1109767695786490749, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
+    reference:
+      Guid:
+        Data1: 55173300
+        Data2: 1288591397
+        Data3: -1877986426
+        Data4: 549191961
+      Path: event:/SFX/Audience/sadduck
+  - action: {fileID: 7804878366489648877, guid: bf83ba529804e8743bef2d9123e4ef6a, type: 3}
     reference:
       Guid:
         Data1: 55173300
