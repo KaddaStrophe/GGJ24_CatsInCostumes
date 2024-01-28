@@ -18,6 +18,7 @@ We shall now discuss the matter of The One, the MASTER ring smithied by Sauron, 
 We must decide now, how to prevent him from getting it.
 
 # speaker Gimli
+# mood neutral
 Then why shan't I shatter The Ring right now?
 
 # speaker -
@@ -68,6 +69,7 @@ As the council broke away in laughter, sinking with endless streams of tears in 
 Thus the great menace that this ring and Sauron are, is unveiled. Futile are the dwarfs efforts.
 
 # speaker Gandalf
+# mood neutral
 Futile the efforts of many in this council would be, myself included.
 
 # speaker Boromir
@@ -109,6 +111,7 @@ And then he pr- arrrgggghhh...
 (mutters into his beard)
 
 # speaker Legolas
+# mood neutral
 He's cute..
 
 -> section2
@@ -132,19 +135,23 @@ He's cute..
 ...
 
 # speaker Aragorn
+# mood neutral
 Don't be ashamed Gimli, son of Glóin, for none here could have mustered the strength to carve a yet so little scar into the Dark Lords masterpiece.
 
 # speaker Gandalf
+# mood neutral
 Aragorn speaks wisely. The Ring cannot be easily destroyed, at least not by us: not by the hot ovens under the Lonely Mountain -
 
 I dare say not even the smoldering fires within the mightiest dragon of yore, Ancalagon the Black, could have molten The Ring.
 
 # speaker Legolas
+# mood shook
 But that is terrible news! We cannot hide it, for none of our holds will withstand Saurons test over time, we cannot defeat Sauron, for he is too powerful already, and now you say we cannot destroy it!
 
 What hope is left, then?
 
 # speaker Gandalf
+# mood shook
 ...
 
 # speaker Elrond
@@ -172,6 +179,7 @@ Wohoo! I know it's exciting right?
 
 == sadduck2 ==
 # speaker Legolas
+# mood shook
 What grief! What grief! Ai oi!
 
 -> section3
@@ -181,6 +189,7 @@ What grief! What grief! Ai oi!
 ...
 
 # speaker Legolas
+# mood shook
 Oh I can't stand this silence!
 
 -> section3
@@ -190,6 +199,7 @@ Oh I can't stand this silence!
 
 == dundunndunnn2 ==
 # speaker Legolas
+# mood shook
 What grief! What grief! Ai oi!
 
 -> section3
@@ -199,18 +209,21 @@ What grief! What grief! Ai oi!
 
 == angryboat2 ==
 # speaker Legolas
+# mood shook
 What grief! What grief! Ai oi!
 
 -> section3
 
 == awwww2 ==
 # speaker Legolas
+# mood shook
 What grief! What grief! Ai oi!
 
 -> section3
 
 == clap2 ==
 # speaker Gandalf
+# mood shook
 We're in a grave situation indeed.
 
 -> section3
@@ -240,6 +253,7 @@ We're in a grave situation indeed.
 ...
 
 # speaker Gandalf
+# mood neutral
 ...
 
 # speaker Frodo
@@ -247,6 +261,7 @@ We're in a grave situation indeed.
 ..
 
 # speaker Gandalf
+# mood shook
 ..!
 
 # speaker Frodo
@@ -302,9 +317,11 @@ Indeed, as it seems that not even the non-invitation to a secret council can dis
 You are brave, Frodo, Drogos son. And we won't send you on this journey all alone and without help. The free folks shall each send a companion with you.
 
 # speaker Aragorn
+# mood neutral
 Wherever you go, I will help you as best as I may, I'll follow you, and be it until the very doorstep of Sammath Naur where the Ring first saw the Earth. You have my sword.
 
 # speaker Legolas
+# mood neutral
 And you have my bow!
 
 # speaker Gimli
@@ -324,7 +341,8 @@ When everyone had proclaimed there respective weaponry at hand, the fellowship h
 It was hard for Elrond to not break into laughter. He really tried not to. But amidst the storm of giggles and open joy at the expense of the poor hobbit, the old Elfs barriers at last fell.
 
 # speaker Gandalf
-Y- You..!! (lul)
+# mood neutral
+Y- You..!!
 
 # speaker -
 Gandalf was in tears for he had never witnessed a joke so wonderful and absurd.
@@ -345,9 +363,11 @@ I saw this to be a future path from here on. You are brave, Frodo, Drogos son. A
 ...
 
 # speaker Aragorn
+# mood neutral
 Wherever you go, I will help you as best as I may, I'll follow you, and be it until the very doorstep of Sammath Naur where the Ring first saw the Earth. You have my sword.
 
 # speaker Legolas
+# mood neutral
 And you have my bow!
 
 # speaker Gimli
@@ -371,6 +391,7 @@ Gimli and Legolas had exchanged meaningful glances, a romantic tension was in th
 ...
 
 # speaker Gandalf
+# mood neutral
 Let's give those two some space and continue the meeting another day.
 
 # speaker -
@@ -404,18 +425,22 @@ Forever.
 What a sturdy hobbit here among us, and what courage!
 
 # speaker Legolas
+# mood neutral
 A realm charm! Oh what I'd give to travel with such lovely fellows!
 
 # speaker Gandalf
+# mood shook
 A FELLOWSHIP! That is THE idea, you're a genius dear!
 
 # speaker Elrond
 You are brave and cute, Frodo, Drogos son. It is indeed a fabulous idea to not send you on this journey all alone and without help. The free folks shall each send a companion with you!
 
 # speaker Aragorn
+# mood neutral
 Wherever you go, I will help you as best as I may, I'll consider you lovely, and be it at the very doorstep of Sammath Naur where the Ring first saw the Earth. You have my sword.
 
 # speaker Legolas
+# mood neutral
 And you have my bow!
 
 # speaker Gimli
