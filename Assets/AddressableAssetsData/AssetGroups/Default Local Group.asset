@@ -125,6 +125,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - characters
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e3b7e99c2dd494448aaef49fb5a0c5a
+    m_Address: Closed
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
