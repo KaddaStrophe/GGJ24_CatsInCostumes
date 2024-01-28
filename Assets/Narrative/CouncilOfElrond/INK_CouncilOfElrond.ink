@@ -1,14 +1,10 @@
 # background Closed
 # title Act 2
-The Council of Cats (I mean, Elrond)
+The Council of Cats
 
 -> section1
 
 === section1 ===
-# background Closed
-# title Act 2
-Elrond's Kick-Ass Council
-
 # background Rivendell
 # mood neutral
 # speaker -
