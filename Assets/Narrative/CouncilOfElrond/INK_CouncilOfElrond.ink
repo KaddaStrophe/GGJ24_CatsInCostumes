@@ -44,7 +44,7 @@ And while the other council members shook their heads and judged Gimli, the youn
 
 ... and SHATTERED it, thus destroying Sauron and saving the West.
 
--> DONE
+-> end
 
 == sadduck1 ==
 -> section2
@@ -78,7 +78,7 @@ When Arwen returned home, she found nothing but a collection of letters bidding 
 
 Long after would she be seen standing at the edge of the cliffs nearby, the river Bruinen deep below washing away memories.
 
--> DONE
+-> end
 
 == catcallwhistle1 ==
 # speaker -
@@ -101,7 +101,7 @@ Sauron descended from a dark shadow that had formed above the council chamber an
 
 And then he pr- arrrgggghhh...
 
--> DONE
+-> end
 
 == awwww1 ==
 # speaker Gimli
@@ -116,7 +116,7 @@ He's cute..
 == clap1 ==
 -> section2
 
--> DONE
+-> end
 
 
 
@@ -272,7 +272,7 @@ Anyway LET! US! GO! I am READY for this journey, Sam let's grab that ring and hi
 # speaker -
 It was then that Gandalf and Elrond realized they had made a grand mistake trusting in a hobbit, the most party-adjacent of all creatures.
 
--> DONE
+-> end
 
 == sadduck3 ==
 # speaker Frodo
@@ -286,7 +286,7 @@ Disheartened, he sat down again and stayed silent from now on.
 
 The ring was eventually entrusted to a no-name elf from Elrond's house hold, who gathered a much smaller fellowship than Frodo would have.
 
--> DONE
+-> end
 
 == cicarda3 ==
 # speaker -
@@ -317,7 +317,7 @@ And my pan!
 # speaker -
 When everyone had proclaimed there respective weaponry at hand, the fellowship had formed: the FELLOWSHIP of the RING. Much peril would they endure in the times to come.
 
--> DONE
+-> end
 
 == badumtss3 ==
 # speaker -
@@ -331,7 +331,7 @@ Gandalf was in tears for he had never witnessed a joke so wonderful and absurd.
 
 For many years he would tell the story of Frodo the Funny to enlighten the hearts of man, elf and every free creature under the western sun.
 
--> DONE
+-> end
 
 == dundunndunnn3 ==
 # speaker -
@@ -360,7 +360,7 @@ And my pan!
 # speaker -
 When everyone had proclaimed there respective weaponry at hand, the fellowship had formed: the FELLOWSHIP of the RING. Much peril would they endure in the times to come.
 
--> DONE
+-> end
 
 == catcallwhistle3 ==
 # speaker -
@@ -378,7 +378,7 @@ The council, indeed, didn't continue the meeting another day, but procastinated 
 
 After a brutal siege Elrond's hold fell, and once more darkness reigned in all of Middle-Earth.
 
--> DONE
+-> end
 
 == angryboat3 ==
 # speaker Gimli
@@ -396,7 +396,7 @@ Five hours of doomspeak later, Frodo was devoid of any strength and stared flatl
 
 Forever.
 
--> DONE
+-> end
 
 == awwww3 ==
 # speaker Gimli
@@ -428,7 +428,7 @@ And my pan!
 # speaker -
 When everyone had proclaimed there respective weaponry at hand, the fellowship had formed: the FELLOWSHIP of the RING. Much peril would they endure in the times to come.
 
--> DONE
+-> end
 
 == clap3 ==
 # speaker Frodo
@@ -448,4 +448,11 @@ And since indeed no one could bear the thought of seeing Frodo's ultra sad face 
 
 Until Boromir strangled Frodo and forced him to pass over the ring, leading the lands east of the Great Sea into a second darkness.
 
+-> end
+
+
+
+== end ==
+# background Closed
+# title The End
 -> DONE
