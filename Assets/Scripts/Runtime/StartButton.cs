@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,6 +13,10 @@ namespace CatsInCostumes {
         Button button;
         [SerializeField]
         string sceneToLoad;
+
+        [Space]
+        [SerializeField]
+        string labelProlog = "Prolog";
         [SerializeField]
         string labelPrefix = "Act ";
         [SerializeField]
@@ -30,13 +35,21 @@ namespace CatsInCostumes {
 
         public void OnSetAction(InputAction action) {
             sceneToLoad = action.name;
-            label.text = action
+
+            string binding = action
                 .bindings
                 .DefaultIfEmpty(new InputBinding("f?"))
                 .FirstOrDefault()
                 .path
-                .Split('/')[^1]
-                .Replace("f", labelPrefix) + labelSuffix;
+                .Split('/')[^1];
+
+            int actNumber = int.Parse(Regex.Replace(binding, "[^0-9]+", ""));
+
+            actNumber--;
+
+            label.text = actNumber == 0
+                ? labelProlog
+                : $"{labelPrefix}{actNumber}{labelSuffix}";
         }
     }
 }
