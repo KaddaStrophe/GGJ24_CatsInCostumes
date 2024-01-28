@@ -161,6 +161,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  onHover:
+    Guid:
+      Data1: -275338659
+      Data2: 1290423095
+      Data3: 999425964
+      Data4: 1215883983
+    Path: event:/SFX/UI/hover
   onDeselect:
     Guid:
       Data1: -275338659

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace CatsInCostumes {
-    sealed class ButtonSFX : MonoBehaviour {
+    sealed class ButtonSFX : MonoBehaviour, IPointerEnterHandler {
 
         [SerializeField]
         Button button;
@@ -12,6 +12,8 @@ namespace CatsInCostumes {
         [Space]
         [SerializeField]
         EventReference onSelect = new();
+        [SerializeField]
+        EventReference onHover = new();
         [SerializeField]
         EventReference onDeselect = new();
         [SerializeField]
@@ -46,5 +48,9 @@ namespace CatsInCostumes {
         }
 
         void HandleClick() => onClick.PlayOneShot();
+
+        public void OnPointerEnter(PointerEventData eventData) {
+            onHover.PlayOneShot();
+        }
     }
 }
