@@ -113,6 +113,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - backgrounds
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d645be70b8b1de74a8b5155582b219c9
+    m_Address: Aragorn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characters
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
