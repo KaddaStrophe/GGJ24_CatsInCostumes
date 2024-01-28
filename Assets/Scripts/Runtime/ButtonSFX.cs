@@ -19,7 +19,6 @@ namespace CatsInCostumes {
 
         bool _isSelected;
         bool isSelected {
-            get => _isSelected;
             set {
                 if (_isSelected != value) {
                     _isSelected = value;
@@ -37,10 +36,12 @@ namespace CatsInCostumes {
         }
 
         void OnEnable() {
+            _isSelected = false;
             button.onClick.AddListener(HandleClick);
         }
 
         void OnDisable() {
+            _isSelected = false;
             button.onClick.RemoveListener(HandleClick);
         }
 
