@@ -41,7 +41,7 @@ namespace CatsInCostumes {
         }
 
         public void OnSetState(GameState state) {
-            group.alpha = alphaByState[state];
+            group.alpha = alphaByState.GetValueOrDefault(state);
         }
     }
 }

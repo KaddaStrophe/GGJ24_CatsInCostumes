@@ -17,6 +17,8 @@ namespace CatsInCostumes {
         public void OnSetState(GameState state) {
             image.sprite = state switch {
                 GameState.MainMenu => mainMenuSprite,
+                GameState.Credits => mainMenuSprite,
+                GameState.Exit => mainMenuSprite,
                 GameState.PlayingDialog => gameSprite,
                 GameState.WaitingForReaction => gameSprite,
                 GameState.WaitingForScene => mainMenuSprite,

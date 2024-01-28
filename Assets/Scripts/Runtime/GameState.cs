@@ -4,5 +4,7 @@
         PlayingDialog,
         WaitingForReaction,
         WaitingForScene,
+        Credits,
+        Exit,
     }
 }

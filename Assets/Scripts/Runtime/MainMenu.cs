@@ -1,10 +1,12 @@
 using System.Collections;
+using FMODUnity;
 using UnityEngine;
 
 namespace CatsInCostumes {
     sealed class MainMenu : MonoBehaviour, IGameMessages {
         [SerializeField]
         string firstScene;
+        [Space]
         [SerializeField]
         GameObject selectUI;
         [SerializeField]
@@ -23,32 +25,35 @@ namespace CatsInCostumes {
             OnSetState(GameManager.gameState);
         }
 
-        public void HandleStartButtonPressed() {
-            if (GameManager.TryGetStory(firstScene, out var story)) {
-                gameObject.scene.BroadcastMessage(nameof(IInkMessages.OnSetInk), story);
-            }
-        }
-
-        public void HandleCreditsButtonPressed() {
-            creditsUI.SetActive(!creditsUI.activeSelf);
-            selectUI.SetActive(!selectUI.activeSelf);
-
-            if (creditsUI.activeSelf) {
-                creditsUI.SelectFirstSelectable();
-            } else {
-                selectUI.SelectFirstSelectable();
-            }
-        }
-
-        public void HandleQuitButtonPressed() {
-            GameManager.Quit();
-        }
-
         public void OnSetState(GameState state) {
             selectUI.SetActive(state == GameState.MainMenu);
             if (selectUI.activeSelf) {
                 selectUI.SelectFirstSelectable();
             }
+
+            creditsUI.SetActive(state == GameState.Credits);
+            if (creditsUI.activeSelf) {
+                creditsUI.SelectFirstSelectable();
+            }
+
+            if (state == GameState.Exit) {
+                if (exitSound.IsNull) {
+                    HandleQuitButtonPressed();
+                } else {
+                    Invoke(nameof(HandleQuitButtonPressed), exitDelay);
+                    RuntimeManager.PlayOneShot(exitSound);
+                }
+            }
+        }
+
+        [Space]
+        [SerializeField]
+        EventReference exitSound = new();
+        [SerializeField]
+        float exitDelay = 2;
+
+        void HandleQuitButtonPressed() {
+            GameManager.Quit();
         }
     }
 }
