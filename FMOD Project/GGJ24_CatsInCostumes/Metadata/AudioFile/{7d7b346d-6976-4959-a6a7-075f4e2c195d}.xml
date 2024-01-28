@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7d7b346d-6976-4959-a6a7-075f4e2c195d}">
+		<property name="assetPath">
+			<value>Sam.wav - 17.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.24507936507936509</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22a0b705-2a82-4697-8162-ad75e0cc3ff9}</destination>
+		</relationship>
+	</object>
+</objects>

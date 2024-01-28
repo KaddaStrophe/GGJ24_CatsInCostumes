@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>13</value>
+			<value>14</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>NARRATOR</value>
@@ -32,6 +32,7 @@
 			<value>Other Dark Rider</value>
 			<value>Another Dark Rider</value>
 			<value>Another Another Dark Rider</value>
+			<value>Bilbo</value>
 		</property>
 		<property name="isGlobal">
 			<value>true</value>
