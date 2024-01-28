@@ -58,7 +58,7 @@ Inspired by his glorious friend, Frodo is healed from his depression, living his
 
 The End.
 
--> DONE
+-> end
 
 == sadduck1 ==
 # speaker -
@@ -91,7 +91,7 @@ And with that he takes the other riders and leaves with his head down.
 
 Unsure of what just happened, Frodo dusts himself off, goes to his friends and proceeds his journey.
 
--> DONE
+-> end
 
 == cicarda1 ==
 # speaker -
@@ -117,7 +117,7 @@ Having no one around to heal him, because all except him have miraculously left.
 
 The End.
 
--> DONE
+-> end
 
 == badumtss1 ==
 # speaker -
@@ -143,7 +143,7 @@ Hahaha! Ooooh you~!
 # speaker -
 Then they helped Frodo up, all grabbed hands and merrily slandered into the distance, skipping along the way to a 
 
--> DONE
+-> end
 
 == dundunndunnn1 ==
 # speaker -
@@ -177,7 +177,7 @@ I can and I will. I'm not going down for this gig.
 # speaker -
 With that being said, Frodo leaves Amon Sûl, with his dignity intact.
 
--> DONE
+-> end
 
 == catcallwhistle1 ==
 # speaker Frodo
@@ -220,7 +220,7 @@ Ow! It burns.
 
 Great... should have used protection.
 
--> DONE
+-> end
 
 == angryboat1 ==
 # speaker Frodo
@@ -245,7 +245,7 @@ That happened faster than I expected.
 # speaker Frodo
 Told you so. Shouldn't have done that.
 
--> DONE
+-> end
 
 == awwww1 ==
 # speaker -
@@ -281,7 +281,7 @@ Thus he grants them passage and let's Frodo destroy the ring, ending his journey
 
 The End.
 
--> DONE
+-> end
 
 == clap1 ==
 # speaker -
@@ -323,4 +323,10 @@ They finished their quest and Aragorn made sure no one ever bothered Frodo whils
 
 The End.
 
+-> end
+
+
+
+== end ==
+# nextScene CouncilOfElrond
 -> DONE
