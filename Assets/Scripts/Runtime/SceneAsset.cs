@@ -54,6 +54,10 @@ namespace CatsInCostumes {
         internal string nextScene;
         [SerializeField]
         internal bool isMeowing;
+        [SerializeField]
+        internal string title;
+
+        internal bool isTitleCard => !string.IsNullOrEmpty(title);
 
         internal bool TryGetNextScene(out TextAsset scene) {
             scene = default;

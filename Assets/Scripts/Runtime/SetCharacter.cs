@@ -14,7 +14,7 @@ namespace CatsInCostumes {
         Image portrait;
 
         public void OnSetScreen(ScreenAsset screen) {
-            if (screen.isNarrator) {
+            if (screen.isNarrator || screen.isTitleCard) {
                 speakerBox.SetActive(false);
                 portrait.gameObject.SetActive(false);
             } else {
