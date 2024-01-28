@@ -1,3 +1,7 @@
+# background Closed
+# title Act 2
+The Council of Cats (I mean, Elrond)
+
 -> section1
 
 === section1 ===
@@ -276,11 +280,11 @@ It was then that Gandalf and Elrond realized they had made a grand mistake trust
 ...
 
 # speaker -
-Frodo's heart sank as everyone looked at him with grave pity and disbelief. Not even Gandalf trusted him with this task.
+Frodo's heart sank as everyone looked at him with grave pity.
 
-He clearly overstepped a line, so he sat down again and stayed silent from now on.
+Disheartened, he sat down again and stayed silent from now on.
 
-The ring was eventually entrusted to a no-name elf from Elrond's house hold, who gathered a much smaller fellowship than Frodo would have and fell to the rings ensnaring soon thereafter.
+The ring was eventually entrusted to a no-name elf from Elrond's house hold, who gathered a much smaller fellowship than Frodo would have.
 
 -> DONE
 
