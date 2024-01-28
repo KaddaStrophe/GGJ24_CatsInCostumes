@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -22,6 +23,12 @@ namespace CatsInCostumes {
             var selectable = obj.GetComponentInChildren<Selectable>();
             if (selectable) {
                 selectable.Select();
+            }
+        }
+
+        internal static void PlayOneShot(this in EventReference reference) {
+            if (!reference.IsNull) {
+                RuntimeManager.PlayOneShot(reference);
             }
         }
     }

@@ -41,7 +41,7 @@ namespace CatsInCostumes {
                     HandleQuitButtonPressed();
                 } else {
                     Invoke(nameof(HandleQuitButtonPressed), exitDelay);
-                    RuntimeManager.PlayOneShot(exitSound);
+                    exitSound.PlayOneShot();
                 }
             }
         }

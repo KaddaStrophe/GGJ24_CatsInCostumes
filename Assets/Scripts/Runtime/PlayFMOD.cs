@@ -46,10 +46,10 @@ namespace CatsInCostumes {
                 return;
             }
 
-            RuntimeManager.PlayOneShot(reference);
+            reference.PlayOneShot();
 
             if (GameManager.gameState == GameState.PlayingDialog) {
-                RuntimeManager.PlayOneShot(wrongStateEvent);
+                wrongStateEvent.PlayOneShot();
             }
         }
     }

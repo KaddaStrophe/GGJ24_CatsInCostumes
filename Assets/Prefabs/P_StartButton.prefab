@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4899371005369814421}
   - component: {fileID: 4187073818672475012}
   - component: {fileID: -5231871060316444717}
+  - component: {fileID: 7589879071872828395}
   m_Layer: 5
   m_Name: P_StartButton
   m_TagString: Untagged
@@ -140,6 +141,40 @@ MonoBehaviour:
   sceneToLoad: 
   labelPrefix: 'Act '
   labelSuffix: 
+--- !u!114 &7589879071872828395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800447487604804881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60421883f57617941b40e90695711cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 4187073818672475012}
+  onSelect:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  onDeselect:
+    Guid:
+      Data1: 2037022749
+      Data2: 1074414807
+      Data3: -258536015
+      Data4: -900954864
+    Path: event:/SFX/Audience/applause
+  onClick:
+    Guid:
+      Data1: -848498612
+      Data2: 1104106777
+      Data3: -776390483
+      Data4: 1820895071
+    Path: event:/SFX/Audience/airhorn
 --- !u!1 &2832197775168147644
 GameObject:
   m_ObjectHideFlags: 0
