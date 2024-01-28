@@ -129,7 +129,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 113
       width: 73
       height: 99
     spriteID: fc85cc5f5a642a646bcea34f9a21af8d
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 113}
   - name: AS_Legolas_Frame_1
     originalName: 
     pivot: {x: 0.47945204, y: 0}
@@ -149,9 +149,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 111
+      y: 4
       width: 73
-      height: 99
+      height: 101
     spriteID: 2ec4bfe0d1bd90f4f988f5448d6b1336
     spriteBone: []
     spriteOutline: []
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 111}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -184,7 +184,7 @@ ScriptedImporter:
         x: 5
         y: 0
         width: 73
-        height: 99
+        height: 101
       spriteId: 2ec4bfe0d1bd90f4f988f5448d6b1336
     linkedCells: []
     parentIndex: -1
