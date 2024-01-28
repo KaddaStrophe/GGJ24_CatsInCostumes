@@ -15,6 +15,7 @@ The Witch King of Angmar, leader of the perilous Nazgûl, steps forward, blade i
 # mood shook
 Help!!!
 
+# speaker -
 In a desperate attempt, Frodo uses the power of The Ring to hide. Morphing perceptions, The Ring unveils the pale, ghostly faces of the Dark Riders in shimmering white.
 
 Lost kings pursuing the Dark Lord's wishes.
@@ -56,8 +57,6 @@ Not before destroying Sauron's eye with the laser eyes he has along the way.
 
 Inspired by his glorious friend, Frodo is healed from his depression, living his life happily in the Shire.
 
-The End.
-
 -> end
 
 == sadduck1 ==
@@ -69,12 +68,14 @@ He yelled out in anticipation of the pain he imagined, but nothing was there. Th
 The dark rider hit through his armpit into the stone. Frodo was seemingly surprised. He anticipated more of a struggle than this.
 
 # speaker Frodo
+# mood neutral
 ...Um... ... do you need a second?
 
 # speaker The Dark Rider
 This... has never happened before, I swear.
 
 # speaker Frodo
+# mood neutral
 Of course it hasn't. I get it. You're nervous, it's your first time ever so close to the ring.
 
 ...Do you... do you wanna try again?
@@ -104,6 +105,7 @@ Even the dark rider's leader starts looking around, as expecting to be interrupt
 Though finding noone, he happily gleams at Frodo, whose face falls more and more adrift.
 
 # speaker Frodo
+# mood neutral
 Well.
 
 I mean... this is awkward.
@@ -124,6 +126,7 @@ The End.
 As Frodo finishes his scream, he notices that the sword in his chest disappeared. He pulls off the ring and then asks himself:
 
 # speaker Frodo
+# mood neutral
 Where did-
 
 # speaker Aragorn
@@ -138,6 +141,7 @@ You really thought we were going to finish you off, didn't you?
 Oh what merry fun we had! 
 
 # speaker Frodo
+# mood neutral
 Hahaha! Ooooh you~!
 
 # speaker -
@@ -156,6 +160,7 @@ I mean, his friend Gandalf died pursuing his passing, but was that really someth
 Then a thought hit him. He hasn't even negotiated any contract! What's in it for him? And in this economy, soldering off without payment won't fare you far!
 
 # speaker Frodo
+# mood shook
 Nope!
 
 Nope nope nope nope nope.
@@ -164,14 +169,17 @@ Nope nope nope nope nope.
 He takes of the ring and gladly hands it to the dark rider.
 
 # speaker Frodo
+# mood neutral
 Here you go good sir. I don't have any obligation to be in your way more than I already have. 
 
 In fact, I need to see my doctor immediately to get this wound cured.
 
 # speaker Aragorn
+# mood shook
 But... Frodo! You can't just-
 
 # speaker Frodo
+# mood neutral
 I can and I will. I'm not going down for this gig.
 
 # speaker -
@@ -181,12 +189,14 @@ With that being said, Frodo leaves Amon Sûl, with his dignity intact.
 
 == catcallwhistle1 ==
 # speaker Frodo
+# mood neutral
 At least take me out to dinner first.
 
 # speaker The Dark Rider
 ...what?
 
 # speaker Frodo
+# mood neutral
 You could at least have the decency to wait for my consent before putting it in.
 
 # speaker The Dark Rider
@@ -195,6 +205,7 @@ You could at least have the decency to wait for my consent before putting it in.
 This is not what this is.
 
 # speaker Frodo
+# mood neutral
 Well it looks very much like it, doesn't it? I mean it's in and all.
 
 # speaker The Dark Rider
@@ -203,6 +214,7 @@ This isn't...
 I... I don't swing that way.
 
 # speaker Frodo
+# mood neutral
 Sure you don't. But since we are in this predicament you might as well finish the job.
 
 # speaker The Dark Rider
@@ -214,6 +226,7 @@ I... I have to go! I'm sorry!
 And with that, he pulls his sword from Frodo's chest, gathering the other riders, leaving in a hurry.
 
 # speaker Frodo
+# mood neutral
 ... Well that was awkward.
 
 Ow! It burns.
@@ -224,6 +237,7 @@ Great... should have used protection.
 
 == angryboat1 ==
 # speaker Frodo
+# mood neutral
 Oh you're gonna regret that real soon.
 
 # speaker The Dark Rider
@@ -243,6 +257,7 @@ Fearing to receive the same fate, all riders flee immediately.
 That happened faster than I expected.
 
 # speaker Frodo
+# mood shook
 Told you so. Shouldn't have done that.
 
 -> end
@@ -252,12 +267,14 @@ Told you so. Shouldn't have done that.
 As Frodo was stabbed, everyone within his vicinity immediately sighed. Aragorn looked at the dark rider, keeping his blade in Frodo's chest.
 
 # speaker Aragorn
+# mood shook
 How?
 
 # speaker The Dark Rider
 What?
 
 # speaker Aragorn
+# mood angry
 How can you stab him? I mean, just look at him. Isn't he just the cutest. So adorable.
 
 # speaker Other Dark Rider
@@ -279,8 +296,6 @@ The dark riders inform Sauron about all the hardships Frodo's been through, and 
 
 Thus he grants them passage and let's Frodo destroy the ring, ending his journey on a happy note.
 
-The End.
-
 -> end
 
 == clap1 ==
@@ -288,6 +303,7 @@ The End.
 Witnessing this act of horror, Aragorn starts clapping slowly.
 
 # speaker Aragorn
+# mood neutral
 Wow.
 
 Really?
@@ -296,12 +312,14 @@ Really?
 What?
 
 # speaker Aragorn
+# mood angry
 A defenceless child? Did you really have to impale him? Very mature of you. I truly am impressed.
 
 # speaker The Dark Rider
 But... but he has the ring.
 
 # speaker Aragorn
+# mood angry
 So what? You're just gonna take it from him because he can't fend for himself yet? Wow. I really expected more from Saruon's finest.
 
 # speaker The Dark Rider
@@ -310,6 +328,7 @@ He... he wouldn't want to give it to me.
 I asked nicely first, I swear!
 
 # speaker Aragorn
+# mood angry
 Oh, right. So you thought you should just forcefully take it from him, didn't you? 
 
 “Oh. He doesn't want to hand it to me? Well, then I should just MAKE HIM hand it over!” Very mature indeed.
@@ -320,8 +339,6 @@ Go. Get out of here. And never show your face near me, or I'll make you regret i
 And with that, the dark lord pulled out his sword, sincerely apologised to Frodo and left with the other riders, never coming near Aragorn again.
 
 They finished their quest and Aragorn made sure no one ever bothered Frodo whilst finishing their quest to destroy the ring ever again.
-
-The End.
 
 -> end
 

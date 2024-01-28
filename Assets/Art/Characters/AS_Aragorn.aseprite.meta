@@ -148,8 +148,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 102
+      x: 86
+      y: 4
       width: 74
       height: 90
     spriteID: a3eb988bfd56f9f488715b0a778b813b
@@ -160,7 +160,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 102}
+    uvTransform: {x: 86, y: 4}
+  - name: AS_Aragorn_Frame_2
+    originalName: 
+    pivot: {x: 0.45945945, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4
+      width: 74
+      height: 90
+    spriteID: cb150162b3d3af741adcab7f71a0dc77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -186,6 +206,14 @@ ScriptedImporter:
         width: 74
         height: 90
       spriteId: a3eb988bfd56f9f488715b0a778b813b
+    - name: AS_Aragorn_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 6
+        y: 0
+        width: 74
+        height: 90
+      spriteId: cb150162b3d3af741adcab7f71a0dc77
     linkedCells: []
     parentIndex: -1
   platformSettings:

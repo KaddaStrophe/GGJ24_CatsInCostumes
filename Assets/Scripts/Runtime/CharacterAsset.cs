@@ -38,13 +38,20 @@ namespace CatsInCostumes {
         internal bool TryGetSprite(Mood mood, out Sprite sprite) => sprites.TryGetValue(mood, out sprite) && sprite;
 
 #if UNITY_EDITOR
+        [ContextMenu(nameof(OnValidate))]
         void OnValidate() {
+            var defaultSprite = sprites.GetValueOrDefault(Mood.Neutral);
+
             var newSprites = Enum
                 .GetValues(typeof(Mood))
                 .OfType<Mood>()
-                .ToDictionary(m => m, m => sprites.GetValueOrDefault(m));
+                .ToDictionary(m => m, m => sprites.TryGetValue(m, out var sprite) && sprite ? sprite : defaultSprite);
 
-            sprites.SetItems(newSprites);
+            if (!Enumerable.SequenceEqual(sprites.Values, newSprites.Values)) {
+                sprites.SetItems(newSprites);
+                UnityEditor.EditorUtility.SetDirty(this);
+                UnityEditor.AssetDatabase.SaveAssetIfDirty(this);
+            }
         }
 #endif
     }
