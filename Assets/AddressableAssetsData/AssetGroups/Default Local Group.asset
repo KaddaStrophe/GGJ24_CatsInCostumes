@@ -131,11 +131,23 @@ MonoBehaviour:
     m_SerializedLabels:
     - backgrounds
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b2ffb0a89a345649850b50841e3d4ad
+    m_Address: BilbosBirthday
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - stories
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3870e2b5fda6df74d8947c634e218f81
     m_Address: Legolas
     m_ReadOnly: 0
     m_SerializedLabels:
     - characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4513c6bca41dee84da82f79044daf9c4
+    m_Address: Hobbiton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - backgrounds
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
