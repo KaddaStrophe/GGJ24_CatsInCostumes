@@ -43,11 +43,7 @@ namespace CatsInCostumes {
             if (isMeowing != shouldBeMeowing) {
                 isMeowing = shouldBeMeowing;
 
-                if (isMeowing) {
-                    meowingInstance.start();
-                } else {
-                    meowingInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                }
+                meowingInstance.SetIsPlaying(isMeowing);
             }
         }
 
