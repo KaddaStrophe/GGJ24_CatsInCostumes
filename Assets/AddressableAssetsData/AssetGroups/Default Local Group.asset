@@ -119,6 +119,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - characters
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7619039e8c04f2946843b67f9af38271
+    m_Address: Gandalf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characters
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
