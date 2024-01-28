@@ -149,10 +149,30 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 79
+      y: 154
       width: 64
       height: 67
     spriteID: 22a2ff8bbc7178e408af0c50cc296efe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 154}
+  - name: AS_Frodo_Frame_2
+    originalName: 
+    pivot: {x: 0.48717952, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 78
+      height: 67
+    spriteID: 35e08f031db94124e836ce0ee21ce79e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -186,6 +206,14 @@ ScriptedImporter:
         width: 64
         height: 67
       spriteId: 22a2ff8bbc7178e408af0c50cc296efe
+    - name: AS_Frodo_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 2
+        y: 0
+        width: 78
+        height: 67
+      spriteId: 35e08f031db94124e836ce0ee21ce79e
     linkedCells: []
     parentIndex: -1
   platformSettings:
