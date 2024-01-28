@@ -42,19 +42,14 @@ namespace CatsInCostumes {
                 return;
             }
 
-            switch (state) {
-                case PLAYBACK_STATE.PLAYING:
-                    if (!isPlaying) {
-                        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                    }
-
-                    break;
-                case PLAYBACK_STATE.STOPPED:
-                    if (isPlaying) {
-                        instance.start();
-                    }
-
-                    break;
+            if (isPlaying) {
+                if (state != PLAYBACK_STATE.PLAYING) {
+                    instance.start();
+                }
+            } else {
+                if (state != PLAYBACK_STATE.STOPPED) {
+                    instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
             }
         }
     }
