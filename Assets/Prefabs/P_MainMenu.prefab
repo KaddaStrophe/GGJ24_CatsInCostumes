@@ -1007,7 +1007,7 @@ MonoBehaviour:
       Data3: 543840177
       Data4: 427605865
     Path: event:/SFX/Audience/buuuh
-  exitDelay: 2
+  exitDelay: 3
 --- !u!1 &7375325328039129675
 GameObject:
   m_ObjectHideFlags: 0

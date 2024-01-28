@@ -438,8 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkFile: {fileID: 0}
-  reactionDelay: 2
-  sceneDelay: 3
+  reactionDelay: 3
+  sceneDelay: 4
 --- !u!114 &8840295515077036697
 MonoBehaviour:
   m_ObjectHideFlags: 0
