@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a8dddfe9-c3c6-4c24-a66e-47cba3d23f32}">
+		<property name="assetPath">
+			<value>intermission - 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0473696145124716</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22a0b705-2a82-4697-8162-ad75e0cc3ff9}</destination>
+		</relationship>
+	</object>
+</objects>
