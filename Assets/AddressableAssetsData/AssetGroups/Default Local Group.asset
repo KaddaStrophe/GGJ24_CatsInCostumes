@@ -137,6 +137,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - stories
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3870e2b5fda6df74d8947c634e218f81
+    m_Address: Legolas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - characters
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 990519dd4ba2888429191cb42386bd92, type: 2}
   m_SchemaSet:
