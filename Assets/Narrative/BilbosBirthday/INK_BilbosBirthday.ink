@@ -92,9 +92,7 @@ Hey, I'm trying to do my hob here!!
 # speaker Bilbo
 My dear People, My dear Bagginses and Boffins, and my dear Tooks and Brandybucks, and Grubbs, and Chubbs, and Burrowses, and Hornblowers, ...
 
-... and Bolgers, Bracegirdles, Goodbodies, Brockhouses and Proudfoots. Also my good Sackville-Bagginses that I welcome back at last to Bag End. Today is my one hundred and eleventh birthday: 
-
-I am eleventy-one today! 
+... and Bolgers, Bracegirdles, Goodbodies, Brockhouses and Proudfoots. 
 
 # speaker Gandalf
 # mood shook
@@ -105,6 +103,10 @@ I am eleventy-one today!
 !
 
 # speaker Bilbo
+Also my good Sackville-Bagginses that I welcome back at last to Bag End. Today is my one hundred and eleventh birthday: 
+
+I am eleventy-one today! 
+
 I hope you are all enjoying yourselves as much as I am. I shall not keep you long. I have called you all together for a Purpose. Indeed, for Three Purposes! 
 
 First of all, to tell you that I am immensely fond of you all, and that eleventy-one years is too short a time to live among such excellent and admirable hobbits.
@@ -167,7 +169,7 @@ GOOD-BYE!
 
 == catcallwhistle2 ==
 # speaker Legolas
-# mood neutral
+# mood smug
 Niice!
 -> end
 

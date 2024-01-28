@@ -83,6 +83,10 @@ Long after would she be seen standing at the edge of the cliffs nearby, the rive
 -> end
 
 == catcallwhistle1 ==
+# speaker Legolas
+# mood smug
+...
+
 # speaker -
 Legolas was in awe of the dwarfs display of muscles.
 
@@ -111,7 +115,7 @@ And then he pr- arrrgggghhh...
 (mutters into his beard)
 
 # speaker Legolas
-# mood neutral
+# mood smug
 He's cute..
 
 -> section2
@@ -383,6 +387,14 @@ When everyone had proclaimed there respective weaponry at hand, the fellowship h
 -> end
 
 == catcallwhistle3 ==
+# speaker Gimli
+# mood smug
+...?
+
+# speaker Legolas
+# mood smug
+...!
+
 # speaker -
 Gimli and Legolas had exchanged meaningful glances, a romantic tension was in the air.
 
