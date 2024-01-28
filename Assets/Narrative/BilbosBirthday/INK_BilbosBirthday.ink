@@ -37,7 +37,7 @@ I'm looking FORWARD to this speech!
 
 == sadduck1 ==
 # speaker Frodo
-# mood shook
+# mood neutral
 Every year the same procedure...
 -> section2
 
@@ -55,6 +55,7 @@ Ok.
 
 == dundunndunnn1 ==
 # speaker Gandalf
+# mood neutral
 The hobbit's great moment is nearing...
 -> section2
 
@@ -67,6 +68,7 @@ Not his sexual appeal, what's wrong with you?? Anyway, the speech now...
 
 == angryboat1 ==
 # speaker Gandalf
+# mood neutral
 The hobbit's great moment is nearing...
 -> section2
 
