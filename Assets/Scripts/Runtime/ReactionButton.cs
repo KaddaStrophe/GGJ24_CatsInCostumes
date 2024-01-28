@@ -42,7 +42,7 @@ namespace CatsInCostumes {
 
             text[0] = char.ToUpper(text[0]);
 
-            if (text.Length > 3) {
+            if (text.Length >= 3) {
                 text = text[..3];
                 if (transform is RectTransform rTransform) {
                     rTransform.sizeDelta = rTransform.sizeDelta.WithX(30);

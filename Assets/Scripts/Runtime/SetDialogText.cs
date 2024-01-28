@@ -25,14 +25,18 @@ namespace CatsInCostumes {
                     textRoutine = null;
                 }
 
-                speech.text = screen.isNarrator
-                    ? screen.speech
-                    : $"\"{screen.speech}\"";
-                if (string.IsNullOrEmpty(screen.speech)) {
+                if (screen.isTitleCard) {
                     speechBox.SetActive(false);
                 } else {
-                    speechBox.SetActive(true);
-                    textRoutine = StartCoroutine(UpdateText_Co());
+                    speech.text = screen.isNarrator
+                        ? screen.speech
+                        : $"\"{screen.speech}\"";
+                    if (string.IsNullOrEmpty(screen.speech)) {
+                        speechBox.SetActive(false);
+                    } else {
+                        speechBox.SetActive(true);
+                        textRoutine = StartCoroutine(UpdateText_Co());
+                    }
                 }
             }
         }

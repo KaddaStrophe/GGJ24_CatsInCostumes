@@ -45,6 +45,7 @@ namespace CatsInCostumes {
             if (story.canContinue) {
                 currentScreen = Instantiate(currentScreen);
                 currentScreen.speech = story.Continue().Trim();
+                currentScreen.title = "";
                 foreach (string tag in story.currentTags) {
                     string key = tag.Split(' ')[0];
                     string value = tag[(key.Length + 1)..];
@@ -63,6 +64,9 @@ namespace CatsInCostumes {
                             break;
                         case "nextScene":
                             currentScreen.nextScene = value;
+                            break;
+                        case "title":
+                            currentScreen.title = value;
                             break;
                         default:
                             throw new NotImplementedException(key);
