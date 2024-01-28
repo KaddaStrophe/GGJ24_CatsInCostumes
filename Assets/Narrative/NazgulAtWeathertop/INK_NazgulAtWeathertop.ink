@@ -68,14 +68,14 @@ He yelled out in anticipation of the pain he imagined, but nothing was there. Th
 The dark rider hit through his armpit into the stone. Frodo was seemingly surprised. He anticipated more of a struggle than this.
 
 # speaker Frodo
-# mood neutral
+# mood smug
 ...Um... ... do you need a second?
 
 # speaker The Dark Rider
 This... has never happened before, I swear.
 
 # speaker Frodo
-# mood neutral
+# mood smug
 Of course it hasn't. I get it. You're nervous, it's your first time ever so close to the ring.
 
 ...Do you... do you wanna try again?
@@ -141,7 +141,7 @@ You really thought we were going to finish you off, didn't you?
 Oh what merry fun we had! 
 
 # speaker Frodo
-# mood neutral
+# mood smug
 Hahaha! Ooooh you~!
 
 # speaker -
@@ -189,14 +189,14 @@ With that being said, Frodo leaves Amon Sûl, with his dignity intact.
 
 == catcallwhistle1 ==
 # speaker Frodo
-# mood neutral
+# mood smug
 At least take me out to dinner first.
 
 # speaker The Dark Rider
 ...what?
 
 # speaker Frodo
-# mood neutral
+# mood smug
 You could at least have the decency to wait for my consent before putting it in.
 
 # speaker The Dark Rider
@@ -205,7 +205,7 @@ You could at least have the decency to wait for my consent before putting it in.
 This is not what this is.
 
 # speaker Frodo
-# mood neutral
+# mood smug
 Well it looks very much like it, doesn't it? I mean it's in and all.
 
 # speaker The Dark Rider
@@ -214,7 +214,7 @@ This isn't...
 I... I don't swing that way.
 
 # speaker Frodo
-# mood neutral
+# mood smug
 Sure you don't. But since we are in this predicament you might as well finish the job.
 
 # speaker The Dark Rider
@@ -226,7 +226,7 @@ I... I have to go! I'm sorry!
 And with that, he pulls his sword from Frodo's chest, gathering the other riders, leaving in a hurry.
 
 # speaker Frodo
-# mood neutral
+# mood smug
 ... Well that was awkward.
 
 Ow! It burns.
