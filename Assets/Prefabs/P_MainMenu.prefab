@@ -709,7 +709,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kadda - Art, UX
+  m_text: Kadda - Art
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4aa6b5e2feb1bd4bb842b5ae1eeca86, type: 2}
   m_sharedMaterial: {fileID: -4006576594528424729, guid: c4aa6b5e2feb1bd4bb842b5ae1eeca86, type: 2}
