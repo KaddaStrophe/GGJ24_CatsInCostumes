@@ -1,5 +1,5 @@
 # Cats in Costumes
-Lord of the rings, if the audience had a soundboard and everyone were cats.
+A game about a lord, some rings, and lots of noisy cats.
 
 ## Jam Details
 Global Game Jam 2024
@@ -8,7 +8,7 @@ Global Game Jam 2024
 - Theme: "make me laugh"
 
 ## Credits
-- Daniel Schulz (code, game design)
+- Katharina Broswik (2d art)
+- Steffen Schreiber (sound design, writing)
+- Daniel Schulz (programming, ux design)
 - Gregor Sönnichsen (writing, ui art)
-- Steffen Schreiber (game design, audio, writing)
-- Katharina Broswik (art, ux design)
